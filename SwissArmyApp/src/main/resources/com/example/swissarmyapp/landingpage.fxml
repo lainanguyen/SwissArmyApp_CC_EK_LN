@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.LandingPage">
+   <children>
+      <TextField layoutX="189.0" layoutY="200.0" />
+      <Button layoutX="358.0" layoutY="200.0" mnemonicParsing="false" text="Button" />
+      <Circle fill="DODGERBLUE" layoutX="300.0" layoutY="96.0" radius="46.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="49.0" fitWidth="61.0" layoutX="270.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../highindlogo.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="234.0" layoutY="152.0" prefHeight="26.0" prefWidth="132.0" text="swiss army app" textOverrun="CLIP">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
