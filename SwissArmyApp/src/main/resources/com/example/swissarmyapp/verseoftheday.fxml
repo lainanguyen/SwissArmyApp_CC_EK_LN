@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.VerseOfTheDay">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="back" />
+      <ImageView fitHeight="172.0" fitWidth="248.0" layoutX="176.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../VerseImage1.jpeg" />
+         </image></ImageView>
+      <Label layoutX="128.0" layoutY="236.0" prefHeight="81.0" prefWidth="344.0" text="looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Label layoutX="262.0" layoutY="317.0" prefHeight="19.0" prefWidth="77.0" text="hebrews 12:2" textAlignment="RIGHT" wrapText="true" />
+   </children>
+</AnchorPane>
