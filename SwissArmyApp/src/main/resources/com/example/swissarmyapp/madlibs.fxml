@@ -2,13 +2,19 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.Madlibs">
    <children>
-      <Label text="Welcome to Mad Libs!" />
-      <Label alignment="CENTER" contentDisplay="CENTER" text="Choose a story" AnchorPane.topAnchor="50.0" />
-      <Button fx:id="Story1" mnemonicParsing="false" onAction="#chooseStory1" text="title 1" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="100.0" />
-      <Button fx:id="Story2" mnemonicParsing="false" onAction="#chooseStory2" text="title 2" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="100.0" />
-      <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToActivities" text="back" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="330.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" text="welcome to mad libs!" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="fill in the blanks and press &quot;generate&quot; when finished." AnchorPane.leftAnchor="165.0" AnchorPane.topAnchor="47.0" />
+      <Label text="title 1" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="90.0" />
+      <Label text="title 2" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="90.0" />
+      <Button fx:id="Story1" mnemonicParsing="false" onAction="#chooseStory1" text="generate" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="250.0" />
+      <Button fx:id="Story2" mnemonicParsing="false" onAction="#chooseStory2" text="generate" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="250.0" />
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToActivities" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="355.0" />
    </children>
 </AnchorPane>
