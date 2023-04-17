@@ -10,7 +10,7 @@
    <children>
       <TextField layoutX="189.0" layoutY="200.0" />
       <Button layoutX="358.0" layoutY="200.0" mnemonicParsing="false" text="Button" />
-      <Circle fill="DODGERBLUE" layoutX="300.0" layoutY="96.0" radius="46.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#404040" layoutX="300.0" layoutY="96.0" radius="46.0" stroke="BLACK" strokeType="INSIDE" />
       <ImageView fitHeight="49.0" fitWidth="61.0" layoutX="270.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../highindlogo.PNG" />
