@@ -19,7 +19,7 @@ public class TipCalc {
    private void calcTip() {
        double inputAmount = Double.parseDouble(theInput.getText());
        double totalAmount = inputAmount * 0.2;
-       theValue.setText(String.format("%.2f",totalAmount));
+       theValue.setText(String.format("%.2f","$" + totalAmount));
    }
 
    @FXML
