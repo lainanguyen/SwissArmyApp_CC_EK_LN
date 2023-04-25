@@ -33,12 +33,11 @@ public class Madlibs {
 
     @FXML
     protected void generateStory1() {
-        String noun = story1Noun.getText();
-        story1.setText("I shall be telling this with a " + noun +
-                "\nSomewhere " + story1MU + " and " + story1MU + " hence: \n" +
-                "Two roads diverged in a " + story1Place + ", and I - \n" +
-                "I took the one less " + story1PTV + " by,\n" +
-                "And that has made " + story1Adverb + " the difference.");
+        story1.setText("I shall be telling this with a " + story1Noun.getText() +
+                    "\nSomewhere " + story1MU.getText() + " and " + story1MU.getText() + " hence: \n" +
+                    "Two roads diverged in a " + story1Place.getText() + ", and I - \n" +
+                    "I took the one less " + story1PTV.getText() + " by,\n" +
+                    "And that has made " + story1Adverb.getText() + " the difference.");
     }
     @FXML
     protected void generateStory2() {
