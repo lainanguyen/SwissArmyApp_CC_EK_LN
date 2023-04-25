@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -15,6 +16,10 @@ import java.io.IOException;
 public class Madlibs {
     @FXML
     private TextField story1Noun;
+//    @FXML
+//    private Text story1Noun;
+//    String noun = story1Noun.getText();
+
     @FXML
     private TextField story1MU;
     @FXML
@@ -28,7 +33,8 @@ public class Madlibs {
 
     @FXML
     protected void generateStory1() {
-        story1.setText("I shall be telling this with a " + story1Noun +
+        String noun = story1Noun.getText();
+        story1.setText("I shall be telling this with a " + noun +
                 "\nSomewhere " + story1MU + " and " + story1MU + " hence: \n" +
                 "Two roads diverged in a " + story1Place + ", and I - \n" +
                 "I took the one less " + story1PTV + " by,\n" +
