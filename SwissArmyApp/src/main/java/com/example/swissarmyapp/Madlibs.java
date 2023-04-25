@@ -1,8 +1,15 @@
 package com.example.swissarmyapp;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 
 public class Madlibs {
@@ -30,7 +37,14 @@ public class Madlibs {
     @FXML
     protected void generateStory2() {
     }
+
     @FXML
-    protected void backToActivities() {
+    public void backToActivities(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("landingpage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 500, 500);
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("LandingPage");
+        stage.setScene(scene);
+        stage.show();
     }
 }
