@@ -6,15 +6,28 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.Madlibs">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" text="welcome to mad libs!" AnchorPane.leftAnchor="230.0" AnchorPane.topAnchor="15.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="14.0" text="welcome to mad libs!" AnchorPane.leftAnchor="226.0" AnchorPane.topAnchor="14.0">
          <font>
             <Font size="18.0" />
          </font></Label>
       <Label alignment="CENTER" contentDisplay="CENTER" text="fill in the blanks and press &quot;generate&quot; when finished." AnchorPane.leftAnchor="165.0" AnchorPane.topAnchor="47.0" />
-      <Label text="title 1" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="90.0" />
-      <Label text="title 2" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="90.0" />
-      <Button fx:id="Story1" mnemonicParsing="false" onAction="#chooseStory1" text="generate" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="250.0" />
-      <Button fx:id="Story2" mnemonicParsing="false" onAction="#chooseStory2" text="generate" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="250.0" />
+      <Label layoutX="113.0" layoutY="82.0" text="the road not taken" AnchorPane.leftAnchor="113.0" AnchorPane.topAnchor="82.0" />
+      <Label layoutX="420.0" layoutY="82.0" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="82.0" />
+      <Button fx:id="Story1" layoutX="130.0" layoutY="285.0" mnemonicParsing="false" onAction="#generateStory1" text="generate" AnchorPane.leftAnchor="130.0" AnchorPane.topAnchor="285.0" />
+      <Label fx:id="story1" layoutX="149.0" layoutY="317.0" text="Label" AnchorPane.leftAnchor="149.0" AnchorPane.topAnchor="317.0" />
+      <Button fx:id="Story2" layoutX="402.0" layoutY="285.0" mnemonicParsing="false" onAction="#generateStory2" text="generate" AnchorPane.leftAnchor="402.0" AnchorPane.topAnchor="285.0" />
+      <Label fx:id="story2" layoutX="420.0" layoutY="317.0" text="Label" AnchorPane.leftAnchor="420.0" />
       <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToActivities" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="355.0" />
+      <TextField fx:id="story1Noun" layoutX="108.0" layoutY="109.0" prefHeight="9.0" prefWidth="112.0" promptText="noun" />
+      <TextField fx:id="story1MU" layoutX="108.0" layoutY="145.0" prefHeight="26.0" prefWidth="112.0" promptText="measuring unit" />
+      <TextField fx:id="story1Place" layoutX="108.0" layoutY="181.0" prefHeight="26.0" prefWidth="112.0" promptText="place" />
+      <TextField fx:id="story1PTV" layoutX="108.0" layoutY="216.0" prefHeight="26.0" prefWidth="112.0" promptText="past tense verb" />
+      <TextField fx:id="story1Adverb" layoutX="108.0" layoutY="251.0" prefHeight="26.0" prefWidth="112.0" promptText="adverb" />
+      <TextField layoutX="379.0" layoutY="109.0" prefHeight="26.0" prefWidth="112.0" />
+      <TextField layoutX="379.0" layoutY="145.0" prefHeight="26.0" prefWidth="112.0" />
+      <TextField layoutX="379.0" layoutY="181.0" prefHeight="26.0" prefWidth="112.0" />
+      <TextField layoutX="379.0" layoutY="216.0" prefHeight="26.0" prefWidth="112.0" />
+      <TextField layoutX="379.0" layoutY="251.0" prefHeight="26.0" prefWidth="112.0" />
+      <Label layoutX="420.0" layoutY="82.0" text="Label" />
    </children>
 </AnchorPane>
