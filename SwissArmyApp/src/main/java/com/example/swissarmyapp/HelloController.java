@@ -19,7 +19,7 @@ public class HelloController {
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 
-// switches to madlibs scene to test if it's working
+ //switches to madlibs scene to test if it's working
 //    @FXML
 //    public void onHelloButtonClick(ActionEvent event) throws IOException {
 //        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("madlibs.fxml"));
