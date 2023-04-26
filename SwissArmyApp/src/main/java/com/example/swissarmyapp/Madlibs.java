@@ -41,6 +41,7 @@ public class Madlibs {
 
     @FXML
     protected void generateStory1() {
+        // story from stanza 4 of the poem "The Road Not Taken by Robert Frost
         story1.setText("I shall be telling this with a " + story1Noun.getText() +
                     "\nSomewhere " + story1MU.getText() + " and " + story1MU.getText() + " hence: \n" +
                     "Two roads diverged in a " + story1Place.getText() + ", and I - \n" +
@@ -49,6 +50,7 @@ public class Madlibs {
     }
     @FXML
     protected void generateStory2() {
+        //story taken from https://www.phillymag.com/foobooz/2023/03/20/tony-burritos-foodery-roxborough/
         story2.setText("Tony's Burritos serves, as its name suggests, burritos - thick as your " + story2Noun.getText() +
                 ", messy as \nheck, crisped in the oven to add some structure and filled with all the usual suspects - \nrice and beans, "
                 + story2Noun2.getText() + " and sour cream, avocado for $" + story2Number.getText() + ". The pork al pastor gets a \nlittle lost in the noise of " + story2Adjective.getText() +
