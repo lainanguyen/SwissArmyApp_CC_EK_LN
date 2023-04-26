@@ -87,10 +87,10 @@ public class Madlibs {
 
     @FXML
     public void backToActivities(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("landingpage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 500, 500);
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("LandingPage");
+        stage.setTitle("ActivityPage");
         stage.setScene(scene);
         stage.show();
     }
