@@ -51,10 +51,32 @@ public class Madlibs {
     @FXML
     protected void generateStory2() {
         //story taken from https://www.phillymag.com/foobooz/2023/03/20/tony-burritos-foodery-roxborough/
-        story2.setText("Tony's Burritos serves, as its name suggests, burritos - thick as your " + story2Noun.getText() +
-                ", messy as \nheck, crisped in the oven to add some structure and filled with all the usual suspects - \nrice and beans, "
-                + story2Noun2.getText() + " and sour cream, avocado for $" + story2Number.getText() + ". The pork al pastor gets a \nlittle lost in the noise of " + story2Adjective.getText() +
-                " starches, but the " + story2Noun3.getText() + " version is solid if you're \ncomfortable ordering a " + story2Noun3.getText() + " burrito from a beer store.");
+        story2.setText("Tony's Burritos serves, as its name suggests, burritos - thick as your " + story2Noun.getText()
+                + ", messy as \nheck, crisped in the oven to add some structure and filled with all the usual " +
+                "suspects " + "- \nrice and beans, " + story2Noun2.getText() + " and sour cream, avocado for $" +
+                story2Number.getText() + ". The pork al pastor gets a \nlittle lost in the noise of " +
+                story2Adjective.getText() + " starches, but the " + story2Noun3.getText() + " version is solid if " +
+                "you're \ncomfortable ordering a " + story2Noun3.getText() + " burrito from a beer store.");
+    }
+
+    @FXML
+    protected void resetStory1() {
+        story1.setText("");
+        story1Noun.setText("");
+        story1MU.setText("");
+        story1Place.setText("");
+        story1PTV.setText("");
+        story1Adverb.setText("");
+    }
+
+    @FXML
+    protected void resetStory2() {
+        story2.setText("");
+        story2Noun.setText("");
+        story2Noun2.setText("");
+        story2Number.setText("");
+        story2Adjective.setText("");
+        story2Noun3.setText("");
     }
 
     @FXML
