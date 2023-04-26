@@ -41,7 +41,13 @@ public class Madlibs {
 
     @FXML
     protected void generateStory1() {
-        // story from stanza 4 of the poem "The Road Not Taken by Robert Frost
+//        try {
+//            Integer.parseInt(story1Noun.getText());
+//        } catch (NumberFormatException e) {
+//            story1.setText("Please enter applicable inputs.");
+//
+//        } finally {// story from stanza 4 of the poem "The Road Not Taken by Robert Frost
+
         story1.setText("I shall be telling this with a " + story1Noun.getText() +
                     "\nSomewhere " + story1MU.getText() + " and " + story1MU.getText() + " hence: \n" +
                     "Two roads diverged in a " + story1Place.getText() + ", and I - \n" +
