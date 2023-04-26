@@ -4,7 +4,6 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.Settings">
    <children>
       <Button mnemonicParsing="false" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0" />
@@ -13,5 +12,12 @@
             <Font size="24.0" />
          </font>
       </Label>
+      <Label text="change name" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="150.0" />
+      <Label text="change app color" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="175.0" />
+      <Label text="Label" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="200.0" />
+      <Label text="Label" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="225.0" />
+      <Label text="Label" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="250.0" />
+      <TextField promptText="Name (maybe use internationalized String?)" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="140.0" />
+      <ToggleButton fx:id="colorToggle" mnemonicParsing="false" onAction="#changeAppColor" text="red" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="175.0" />
    </children>
 </AnchorPane>
