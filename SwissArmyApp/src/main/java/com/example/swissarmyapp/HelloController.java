@@ -22,10 +22,10 @@ public class HelloController {
  //switches to madlibs scene to test if it's working
     @FXML
     protected void onHelloButtonClick(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("madlibs.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 500, 500);
+        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("ActivityPage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("MadLibs");
+        stage.setTitle("Activities");
         stage.setScene(scene);
         stage.show();
     }

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.swissarmyapp.ActivityPage"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.ActivityPage">
     <children>
-        <Button layoutX="248.0" layoutY="271.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="love calculator" />
-        <Button layoutX="248.0" layoutY="232.0" mnemonicParsing="false" text="verse of the day" />
-        <Button layoutX="248.0" layoutY="198.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="sports" />
-        <Button layoutX="248.0" layoutY="163.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="madlibs" />
-        <Button layoutX="248.0" layoutY="126.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="tip calculator" />
-        <Label layoutX="236.0" layoutY="52.0" text="good morning [name]" />
-        <Label layoutX="207.0" layoutY="87.0" text="what would you like to do today?" />
-        <Button layoutX="248.0" layoutY="305.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="settings" />
+        <Button layoutX="529.0" layoutY="568.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="love calculator" />
+        <Button layoutX="529.0" layoutY="503.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="verse of the day" />
+        <Button layoutX="529.0" layoutY="439.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="sports" />
+        <Button layoutX="529.0" layoutY="373.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="madlibs" />
+        <Button layoutX="529.0" layoutY="307.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="tip calculator" />
+        <Label layoutX="530.0" layoutY="165.0" prefHeight="50.0" prefWidth="215.0" text="hello [name]" textAlignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font></Label>
+        <Label layoutX="350.0" layoutY="215.0" prefHeight="50.0" prefWidth="559.0" text="what would you like to do today?">
+         <font>
+            <Font size="40.0" />
+         </font></Label>
+        <Button layoutX="529.0" layoutY="631.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="settings" />
     </children>
 
 </AnchorPane>

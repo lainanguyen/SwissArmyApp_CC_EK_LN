@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.LandingPage">
+<AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.LandingPage">
    <children>
       <TextField layoutX="189.0" layoutY="200.0" />
       <Button layoutX="358.0" layoutY="200.0" mnemonicParsing="false" text="Button" />
