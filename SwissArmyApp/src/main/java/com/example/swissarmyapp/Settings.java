@@ -7,7 +7,6 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleButton;
 import javafx.stage.Stage;
-
 import java.io.IOException;
 
 
@@ -15,19 +14,12 @@ public class Settings {
     @FXML
     private ToggleButton colorToggle;
 
-//    @FXML
-//    protected void changeAppColor() {
-//        //scene.getStylesheets().add(HelloApplication.class.getResource("/colorchange.css").toExternalForm());
-//
-//    }
-
     @FXML
-    protected void changeAppColor() {
-        if (colorToggle.isSelected()) {
+    protected boolean changeAppColor() {
 
-        }
-        //scene.getStylesheets().add(HelloApplication.class.getResource("/colorchange.css").toExternalForm());
+
     }
 
-
 }
+
+
