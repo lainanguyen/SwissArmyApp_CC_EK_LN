@@ -10,7 +10,7 @@
       <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="back" />
       <ImageView fitHeight="172.0" fitWidth="248.0" layoutX="176.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../VerseImage1.jpeg" />
+            <Image url="@../../../VerseImages/VerseImage1.jpeg" />
          </image></ImageView>
       <Label layoutX="128.0" layoutY="236.0" prefHeight="81.0" prefWidth="344.0" text="looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God." textAlignment="CENTER" wrapText="true">
          <font>
