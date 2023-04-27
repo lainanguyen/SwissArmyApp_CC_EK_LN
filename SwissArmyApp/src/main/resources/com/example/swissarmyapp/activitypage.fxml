@@ -6,11 +6,10 @@
 
 <AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.ActivityPage">
     <children>
-        <Button layoutX="529.0" layoutY="568.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="love calculator" />
-        <Button layoutX="529.0" layoutY="503.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="verse of the day" />
-        <Button layoutX="529.0" layoutY="439.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="sports" />
-        <Button layoutX="529.0" layoutY="373.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="madlibs" />
-        <Button layoutX="529.0" layoutY="307.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="tip calculator" />
+        <Button layoutX="529.0" layoutY="501.0" mnemonicParsing="false" onAction="#loveButtonClick" prefHeight="50.0" prefWidth="200.0" text="love calculator" />
+        <Button layoutX="529.0" layoutY="436.0" mnemonicParsing="false" onAction="#verseButtonClick" prefHeight="50.0" prefWidth="200.0" text="verse of the day" />
+        <Button layoutX="529.0" layoutY="373.0" mnemonicParsing="false" onAction="#madButtonClick" prefHeight="50.0" prefWidth="200.0" text="mad libs" />
+        <Button layoutX="529.0" layoutY="307.0" mnemonicParsing="false" onAction="#tipButtonClick" prefHeight="50.0" prefWidth="200.0" text="tip calculator" />
         <Label layoutX="530.0" layoutY="165.0" prefHeight="50.0" prefWidth="215.0" text="hello [name]" textAlignment="CENTER">
          <font>
             <Font size="40.0" />
@@ -19,7 +18,7 @@
          <font>
             <Font size="40.0" />
          </font></Label>
-        <Button layoutX="529.0" layoutY="631.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="settings" />
+        <Button layoutX="529.0" layoutY="564.0" mnemonicParsing="false" onAction="#settingButtonClick" prefHeight="50.0" prefWidth="200.0" text="settings" />
     </children>
 
 </AnchorPane>
