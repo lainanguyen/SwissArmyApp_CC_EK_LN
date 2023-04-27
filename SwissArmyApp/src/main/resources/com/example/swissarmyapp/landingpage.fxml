@@ -9,7 +9,7 @@
 <AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.LandingPage">
    <children>
       <TextField layoutX="409.0" layoutY="471.0" prefHeight="46.0" prefWidth="258.0" />
-      <Button layoutX="676.0" layoutY="471.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="121.0" text="Button" />
+      <Button fx:id="nextB" layoutX="676.0" layoutY="471.0" mnemonicParsing="false" onAction="#theNextButtonClick" prefHeight="46.0" prefWidth="121.0" text="Button" />
       <Circle fill="#404040" layoutX="604.0" layoutY="296.0" radius="93.0" stroke="BLACK" strokeType="INSIDE" />
       <ImageView fitHeight="91.0" fitWidth="111.0" layoutX="548.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
          <image>

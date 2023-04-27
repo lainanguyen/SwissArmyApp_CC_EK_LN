@@ -18,14 +18,22 @@ public class TipCalc {
    @FXML
    private void calcTip() {
        double inputAmount = Double.parseDouble(theInput.getText());
-       double totalAmount = inputAmount * 0.2;
-       theValue.setText(String.format("%.2f","$" + totalAmount));
+       double totalAmount = inputAmount * 0.20;
+       String twoDecimal = String.format("%.2f", totalAmount);
+       theValue.setText(twoDecimal);
+   }
+   // String formattedAmount = String.format("%.2f", totalAmount);
+
+
+    @FXML
+   private void calcResult(){
+
    }
 
    @FXML
     private void toReset(){
        theInput.clear();
-       theValue.setText("");
+       theValue.setText("0.00");
     }
 
 
