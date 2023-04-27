@@ -14,12 +14,12 @@ public class Settings {
     @FXML
     private ToggleButton colorToggle;
 
-    @FXML
-    protected boolean changeAppColor() {
+   // @FXML
+    //protected boolean changeAppColor() {
 
 
     }
 
-}
+
 
 
