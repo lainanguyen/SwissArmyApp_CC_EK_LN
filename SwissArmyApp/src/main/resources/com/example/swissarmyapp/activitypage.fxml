@@ -18,7 +18,7 @@
          <font>
             <Font size="40.0" />
          </font></Label>
-        <Button layoutX="529.0" layoutY="564.0" mnemonicParsing="false" onAction="#settingButtonClick" prefHeight="50.0" prefWidth="200.0" text="settings" />
+        <Button layoutX="529.0" layoutY="564.0" mnemonicParsing="false" onAction="#setButtonClick" prefHeight="50.0" prefWidth="200.0" text="settings" />
     </children>
 
 </AnchorPane>

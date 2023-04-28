@@ -15,15 +15,7 @@ public class Settings {
     @FXML
     private ToggleButton colorToggle;
 
-    @FXML
-    protected void changeAppColor() {
-//        if
-//        Scene scene = new Scene(new Group(), 500, 400);
-//        scene.getStylesheets().add("path/stylesheet.css");
 
-
-    }
-}
 
 
 
