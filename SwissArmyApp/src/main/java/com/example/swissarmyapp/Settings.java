@@ -37,15 +37,17 @@ public class Settings {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        if (redMode == false) {
-            scene.getStylesheets().add(HelloApplication.class.getResource("/colorchange.css").toExternalForm());
-        } else {
-            scene.getStylesheets().remove(HelloApplication.class.getResource("/colorchange.css").toExternalForm());
-        }
+      //  if (redMode == false) {
+       //     scene.getStylesheets().add(HelloApplication.class.getResource("/colorchange.css").toExternalForm());
+        //} else {
+          //  scene.getStylesheets().remove(HelloApplication.class.getResource("/colorchange.css").toExternalForm());
+        //}
 
         stage.setTitle("ActivityPage");
         stage.setScene(scene);
         stage.show();
+        ActivityPage activityPage = fxmlLoader.getController();
+        activityPage.onBack();
     }
 
 }

@@ -19,11 +19,11 @@ public class LandingPage {
 
     @FXML
     public void theNextButtonClick(ActionEvent event) throws IOException {
-        TheName.userName = nameInput.getText();
+        ActivityPage.userName = nameInput.getText();
         FXMLLoader fxmlLoader = new FXMLLoader(ActivityPage.class.getResource("activitypage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         ActivityPage controller = fxmlLoader.getController();
-        controller.setUserName(TheName.userName);
+        controller.setUserName(ActivityPage.userName);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Activities");
         stage.setScene(scene);

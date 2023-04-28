@@ -105,5 +105,7 @@ public class VerseOfTheDay {
         stage.setTitle("ActivityPage");
         stage.setScene(scene);
         stage.show();
+        ActivityPage activityPage = fxmlLoader.getController();
+        activityPage.onBack();
     }
 }

@@ -15,8 +15,8 @@ public class ActivityPage {
     public static String userName;
 
     public void setUserName(String name) {
-        TheName.userName = name;
-        nameLabel.setText("Hi, " + TheName.userName);
+        ActivityPage.userName = name;
+        nameLabel.setText("Hi, " + ActivityPage.userName);
     }
     @FXML
     public void loveButtonClick(ActionEvent event) throws IOException {
@@ -68,6 +68,8 @@ public class ActivityPage {
     }
 
 
-
+    public void onBack() {
+        setUserName(userName);
+    }
 }
 
