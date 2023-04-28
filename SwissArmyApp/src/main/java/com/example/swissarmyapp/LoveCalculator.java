@@ -1,9 +1,16 @@
 package com.example.swissarmyapp;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 public class LoveCalculator {
@@ -52,6 +59,16 @@ public class LoveCalculator {
         int loveScore = (commonLetters * 100) / totalLetters;
 
         return loveScore;
+    }
+
+    @FXML
+    public void backToActivities(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("activitypage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setTitle("ActivityPage");
+        stage.setScene(scene);
+        stage.show();
     }
 
 }
