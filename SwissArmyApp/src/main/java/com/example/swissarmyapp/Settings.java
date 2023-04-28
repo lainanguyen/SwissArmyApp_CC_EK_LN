@@ -3,6 +3,7 @@ package com.example.swissarmyapp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleButton;
@@ -14,20 +15,7 @@ public class Settings {
     @FXML
     private ToggleButton colorToggle;
 
-   // @FXML
-    //protected boolean changeAppColor() {
-   @FXML
-   public void backToActivities(ActionEvent event) throws IOException {
-       FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("activitypage.fxml"));
-       Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
-       Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-       stage.setTitle("ActivityPage");
-       stage.setScene(scene);
-       stage.show();
-   }
 
-
-    }
 
 
 
