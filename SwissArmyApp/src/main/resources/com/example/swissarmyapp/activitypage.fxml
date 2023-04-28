@@ -10,7 +10,7 @@
         <Button layoutX="529.0" layoutY="436.0" mnemonicParsing="false" onAction="#verseButtonClick" prefHeight="50.0" prefWidth="200.0" text="verse of the day" />
         <Button layoutX="529.0" layoutY="373.0" mnemonicParsing="false" onAction="#madButtonClick" prefHeight="50.0" prefWidth="200.0" text="mad libs" />
         <Button layoutX="529.0" layoutY="307.0" mnemonicParsing="false" onAction="#tipButtonClick" prefHeight="50.0" prefWidth="200.0" text="tip calculator" />
-        <Label layoutX="530.0" layoutY="165.0" prefHeight="50.0" prefWidth="215.0" text="hello [name]" textAlignment="CENTER">
+        <Label fx:id="nameLabel" layoutX="530.0" layoutY="165.0" prefHeight="50.0" prefWidth="215.0" text="hi" textAlignment="CENTER">
          <font>
             <Font size="40.0" />
          </font></Label>

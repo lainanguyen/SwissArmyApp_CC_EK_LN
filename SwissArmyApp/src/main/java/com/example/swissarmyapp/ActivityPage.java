@@ -6,9 +6,18 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.IOException;
 public class ActivityPage {
+    @FXML
+    private Label nameLabel;
+    public static String userName;
+
+    public void setUserName(String name) {
+        TheName.userName = name;
+        nameLabel.setText("Hi, " + TheName.userName);
+    }
     @FXML
     public void loveButtonClick(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ActivityPage.class.getResource("lovecalculator.fxml")); //change to file name connecting to
@@ -55,6 +64,7 @@ public class ActivityPage {
         stage.setTitle("Settings");
         stage.setScene(scene);
         stage.show();
+
     }
 
 

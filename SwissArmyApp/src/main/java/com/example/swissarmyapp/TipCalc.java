@@ -22,7 +22,6 @@ public class TipCalc {
        String twoDecimal = String.format("%.2f", totalAmount);
        theValue.setText(twoDecimal);
    }
-   // String formattedAmount = String.format("%.2f", totalAmount);
 
 
     @FXML
