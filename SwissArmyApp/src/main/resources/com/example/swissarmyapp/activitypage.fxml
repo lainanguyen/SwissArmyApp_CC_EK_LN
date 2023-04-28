@@ -6,6 +6,7 @@
 
 <AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.ActivityPage">
     <children>
+      <Label fx:id="theTime" layoutX="568.0" layoutY="29.0" prefHeight="17.0" prefWidth="140.0" text="TIME" />
         <Button layoutX="529.0" layoutY="501.0" mnemonicParsing="false" onAction="#loveButtonClick" prefHeight="50.0" prefWidth="200.0" text="love calculator" />
         <Button layoutX="529.0" layoutY="436.0" mnemonicParsing="false" onAction="#verseButtonClick" prefHeight="50.0" prefWidth="200.0" text="verse of the day" />
         <Button layoutX="529.0" layoutY="373.0" mnemonicParsing="false" onAction="#madButtonClick" prefHeight="50.0" prefWidth="200.0" text="mad libs" />

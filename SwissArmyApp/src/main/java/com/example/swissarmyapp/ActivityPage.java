@@ -8,16 +8,38 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.controlsfx.control.ListActionView;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class ActivityPage {
+
+
+
     @FXML
     private Label nameLabel;
+    @FXML
     public static String userName;
-
+    @FXML
+    Label theTime;
+    @FXML
     public void setUserName(String name) {
         ActivityPage.userName = name;
         nameLabel.setText("Hi, " + ActivityPage.userName);
+        startTime();
     }
+    @FXML
+    public void startTime(){
+        updateTime();
+    }
+    private void updateTime(){
+        LocalDateTime now = LocalDateTime.now();
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("hh:mm:ss");
+        String formattedTime = now.format(format);
+        theTime.setText(formattedTime);
+    }
+
     @FXML
     public void loveButtonClick(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ActivityPage.class.getResource("lovecalculator.fxml")); //change to file name connecting to
@@ -71,5 +93,7 @@ public class ActivityPage {
     public void onBack() {
         setUserName(userName);
     }
+
+
 }
 

@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.TipCalc">
    <children>
-      <Label fx:id="theValue" layoutX="553.0" layoutY="241.0" prefHeight="109.0" prefWidth="168.0" text="0.00">
+      <Label fx:id="theValue" layoutX="553.0" layoutY="241.0" prefHeight="109.0" prefWidth="521.0" text="0.00">
          <font>
             <Font size="54.0" />
          </font>
