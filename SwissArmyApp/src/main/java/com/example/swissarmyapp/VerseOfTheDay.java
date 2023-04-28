@@ -16,37 +16,36 @@ import java.util.Random;
 public class VerseOfTheDay {
 
     private String[] imagePaths = {
-            "/VerseImages/VerseImage1.jpeg",
-            "/VerseImages/VerseImage2.jpeg",
-            "/VerseImages/VerseImage3.jpeg",
-            "/VerseImages/VerseImage4.jpeg",
-            "/VerseImages/VerseImage5.jpeg",
-            "/VerseImages/VerseImage6.jpeg",
-            "/VerseImages/VerseImage7.jpeg",
-            "/VerseImages/VerseImage8.jpeg",
-            "/VerseImages/VerseImage9.jpeg",
-            "/VerseImages/VerseImage10.jpeg",
-            "/VerseImages/VerseImage11.jpeg",
-            "/VerseImages/VerseImage12.jpeg",
-            "/VerseImages/VerseImage13.jpeg",
-            "/VerseImages/VerseImage14.jpeg",
-            "/VerseImages/VerseImage15.jpeg",
-            "/VerseImages/VerseImage16.jpeg",
-            "/VerseImages/VerseImage17.jpeg",
-            "/VerseImages/VerseImage18.jpeg",
-            "/VerseImages/VerseImage19.jpeg",
-            "/VerseImages/VerseImage20.jpeg",
-            "/VerseImages/VerseImage21.jpeg",
-            "/VerseImages/VerseImage22.jpeg",
-            "/VerseImages/VerseImage23.jpeg",
-            "/VerseImages/VerseImage24.jpeg",
-            "/VerseImages/VerseImage25.jpeg",
-            "/VerseImages/VerseImage26.jpeg",
-            "/VerseImages/VerseImage27.jpeg",
-            "/VerseImages/VerseImage28.jpeg",
-            "/VerseImages/VerseImage29.jpeg",
-            "/VerseImages/VerseImage30.jpeg",
-
+            "/VerseImage1.jpeg",
+            "/VerseImage2.jpeg",
+            "/VerseImage3.jpeg",
+            "/VerseImage4.jpeg",
+            "/VerseImage5.jpeg",
+            "/VerseImage6.jpeg",
+            "/VerseImage7.jpeg",
+            "/VerseImage8.jpeg",
+            "/VerseImage9.jpeg",
+            "/VerseImage10.jpeg",
+            "/VerseImage11.jpeg",
+            "/VerseImage12.jpeg",
+            "/VerseImage13.jpeg",
+            "/VerseImage14.jpeg",
+            "/VerseImage15.jpeg",
+            "/VerseImage16.jpeg",
+            "/VerseImage17.jpeg",
+            "/VerseImage18.jpeg",
+            "/VerseImage19.jpeg",
+            "/VerseImage20.jpeg",
+            "/VerseImage21.jpeg",
+            "/VerseImage22.jpeg",
+            "/VerseImage23.jpeg",
+            "/VerseImage24.jpeg",
+            "/VerseImage25.jpeg",
+            "/VerseImage26.jpeg",
+            "/VerseImage27.jpeg",
+            "/VerseImage28.jpeg",
+            "/VerseImage29.jpeg",
+            "/VerseImage30.jpeg",
     };
 
     private String[] verses = {
@@ -80,7 +79,7 @@ public class VerseOfTheDay {
             "Blessed is the man who remains steadfast under trial, for when he has stood the test he will receive the crown of life, which God has promised to those who love him. - James 1:12 ESV",
             "And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father, full of grace and truth. - John 1:14 ESV",
             "Let the word of Christ dwell in you richly, teaching and admonishing one another in all wisdom, singing psalms and hymns and spiritual songs, with thankfulness in your hearts to God. - Colossians 3:16 ESV",
-};
+    };
 
     @FXML
     private ImageView verseImage;
@@ -98,7 +97,7 @@ public class VerseOfTheDay {
         verseLabel.setText(verses[verseIndex]);
     }
 
-    @FXML //to go back to Activity Page
+    @FXML
     public void backToActivities(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("activitypage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
