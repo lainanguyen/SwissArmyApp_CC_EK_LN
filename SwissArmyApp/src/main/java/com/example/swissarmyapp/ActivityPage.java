@@ -46,15 +46,18 @@ public class ActivityPage {
         stage.setScene(scene);
         stage.show();
     }
+
     @FXML
-    public void settingButtonClick(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ActivityPage.class.getResource("settings.fxml")); //change to file name connecting to
+    public void setButtonClick(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(ActivityPage.class.getResource("setting1.fxml")); //change to file name connecting to
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790); //size of the window
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setTitle("Mad Libs");
+        stage.setTitle("Settings");
         stage.setScene(scene);
         stage.show();
     }
+
+
 
 }
 
