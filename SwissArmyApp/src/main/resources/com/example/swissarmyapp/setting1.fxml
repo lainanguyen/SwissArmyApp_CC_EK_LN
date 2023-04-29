@@ -29,7 +29,7 @@
          <font>
             <Font size="26.0" />
          </font></Label>
-      <TextField fx:id="changeName" layoutX="324.0" layoutY="142.0" prefHeight="48.0" prefWidth="402.0" promptText="Name (maybe use internationalized String?)" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="142.0" />
+      <TextField fx:id="changeName" layoutX="324.0" layoutY="142.0" prefHeight="48.0" prefWidth="402.0" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="142.0" />
      <ToggleButton fx:id="colorToggle" layoutX="324.0" layoutY="218.0" mnemonicParsing="false" onAction="#changeColor" prefHeight="48.0" prefWidth="273.0" text="red" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="218.0" />
       <ToggleButton layoutX="324.0" layoutY="293.0" mnemonicParsing="false" onAction="#changeFont" prefHeight="48.0" prefWidth="273.0" text="font" />
       <ToggleButton layoutX="324.0" layoutY="369.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="273.0" text="ToggleButton" />
