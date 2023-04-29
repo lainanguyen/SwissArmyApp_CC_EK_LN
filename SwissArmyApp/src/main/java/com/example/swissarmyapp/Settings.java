@@ -38,21 +38,29 @@ public class Settings {
     @FXML
     public void changeColor(ActionEvent event) throws IOException {
         redMode = !redMode;
-        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         if (redMode) {
+            FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             //scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
-            scene.getStylesheets().add(this.getClass().getResource("/redmode.css").toExternalForm());
+//            scene.getStylesheets().add(this.getClass().getResource("/redmode.css").toExternalForm());
             backgroundColor = this.getClass().getResource("/redmode.css").toExternalForm();
+            scene.getStylesheets().addAll(backgroundColor, font);
+            stage.setTitle("Settings");
+            stage.setScene(scene);
+            stage.show();
         } else {
+            FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             //scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-            scene.getStylesheets().add(this.getClass().getResource("/whitemode.css").toExternalForm());
+            //scene.getStylesheets().add(this.getClass().getResource("/whitemode.css").toExternalForm());
             backgroundColor = this.getClass().getResource("/whitemode.css").toExternalForm();
+            scene.getStylesheets().addAll(backgroundColor, font);
+            stage.setTitle("Settings");
+            stage.setScene(scene);
+            stage.show();
         }
-        stage.setTitle("Settings");
-        stage.setScene(scene);
-        stage.show();
     }
 
 
@@ -65,13 +73,15 @@ public class Settings {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         if (fontType) {
             //scene.getStylesheets().remove(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
-            scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
+            //scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
             font = this.getClass().getResource("/raleway.css").toExternalForm();
+            scene.getStylesheets().addAll(backgroundColor, font);
 
         } else {
             //scene.getStylesheets().remove(HelloApplication.class.getResource("/raleway.css").toExternalForm());
-            scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
+            //scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
             font = this.getClass().getResource("/systemfont.css").toExternalForm();
+            scene.getStylesheets().addAll(backgroundColor, font);
         }
         stage.setTitle("Settings");
         stage.setScene(scene);
@@ -102,7 +112,6 @@ public class Settings {
         stage.setScene(scene);
         stage.show();
     }
-
 //    public void settingsChecker(Scene scene) {
 //        if (redMode) {
 //            scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
