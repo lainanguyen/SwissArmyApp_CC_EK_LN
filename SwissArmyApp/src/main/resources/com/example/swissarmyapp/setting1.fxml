@@ -24,7 +24,7 @@
       <ToggleButton layoutX="221.0" layoutY="205.0" mnemonicParsing="false" onAction="#changeFont" text="font" />
       <ToggleButton layoutX="221.0" layoutY="238.0" mnemonicParsing="false" text="ToggleButton" />
       <ToggleButton layoutX="221.0" layoutY="276.0" mnemonicParsing="false" text="ToggleButton" />
-      <Label fx:id="showName" layoutX="300.0" layoutY="112.0" text="Label" />
-      <Button layoutX="421.0" layoutY="140.0" mnemonicParsing="false" text="save" />
+      <Label fx:id="showName" layoutX="250.0" layoutY="111.0" prefHeight="17.0" prefWidth="474.0" text="" />
+      <Button layoutX="421.0" layoutY="140.0" mnemonicParsing="false" onAction="#changeNameButton" text="save" />
    </children>
 </AnchorPane>

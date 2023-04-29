@@ -8,10 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import java.io.File;
 import java.io.IOException;
 
 
@@ -23,6 +21,18 @@ public class Settings {
 
     @FXML
     private TextField changeName;
+
+    //Changes the users name 
+    @FXML
+    public void changeNameButton() {
+        String name = changeName.getText();
+        ActivityPage.userName = name;
+        showName.setText("your name is change to: " + name);
+    }
+
+
+
+
     @FXML
     private ToggleButton colorToggle;
 
