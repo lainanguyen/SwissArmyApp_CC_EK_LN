@@ -94,7 +94,7 @@ public class VerseOfTheDay {
         int verseIndex = random.nextInt(verses.length);
 
         verseImage.setImage(new Image(imagePaths[imageIndex]));
-        verseLabel.setText(verses[verseIndex]);
+        verseLabel.setText(verses[verseIndex].toLowerCase()); // convert to lowercase
     }
 
     @FXML
