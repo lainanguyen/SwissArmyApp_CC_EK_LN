@@ -6,7 +6,9 @@
 
 <AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.Settings">
    <children>
-      <Button mnemonicParsing="false" onAction="#backToActivities" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0" prefHeight="48.0" prefWidth="100.0"/>
+       <Button mnemonicParsing="false" onAction="#backToActivities" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0" prefHeight="48.0" prefWidth="100.0"><font>
+           <Font size="17.0" />
+       </font></Button>
       <Label text="settings" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
          <font>
             <Font size="24.0" />
