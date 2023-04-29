@@ -7,6 +7,8 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.ToggleButton;
 import javafx.stage.Stage;
+
+import java.io.File;
 import java.io.IOException;
 
 
@@ -24,9 +26,10 @@ public class Settings {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         if (redMode) {
+            scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
         } else {
-            scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
+            scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
         }
         stage.setTitle("Settings");
@@ -44,22 +47,24 @@ public class Settings {
 //        }
 //    }
 //
-//    private void setRedMode(ActionEvent) throws IOException {
+//
+//    private void setRedMode(ActionEvent event) throws IOException {
 //        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
 //        Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
-//        EventObject event = null;
 //        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        scene.getStylesheets().add(HelloApplication.class.getResource("/colorchange.css").toExternalForm());
+//        scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
+//        scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
 //        stage.setTitle("Settings");
 //        stage.setScene(scene);
 //        stage.show();
 //    }
 //
-//    private void setWhiteMode() throws IOException {
+//    private void setWhiteMode(ActionEvent event) throws IOException {
 //        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
 //        Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
 //        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        scene.getStylesheets().remove(HelloApplication.class.getResource("/colorchange.css").toExternalForm());
+//        scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
+//        scene.getStylesheets().add(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
 //        stage.setTitle("Settings");
 //        stage.setScene(scene);
 //        stage.show();
@@ -74,6 +79,7 @@ public class Settings {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         if (redMode) {
+            scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
         } else {
             scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
