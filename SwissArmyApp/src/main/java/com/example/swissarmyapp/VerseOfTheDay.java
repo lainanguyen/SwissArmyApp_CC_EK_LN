@@ -51,10 +51,10 @@ public class VerseOfTheDay {
     private String[] verses = {
             "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. - John 3:16 ESV",
             "Trust in the Lord with all your heart, and do not lean on your own understanding. - Proverbs 3:5 ESV",
-            "I can do all things through him who strengthens me. - Philippians 4:13 ESV",
-            "The Lord is my shepherd; I shall not want. - Psalm 23:1 ESV",
+            "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. - 1 John 1:9 ESV",
+            "But God shows his love for us in that while we were still sinners, Christ died for us. - Romans 5:8 ESV",
             "And we know that for those who love God all things work together for good, for those who are called according to his purpose. - Romans 8:28 ESV",
-            "For we walk by faith, not by sight. - 2 Corinthians 5:7 ESV",
+            "And he said to them, 'Go into all the world and proclaim the gospel to the whole creation.' - Mark 16:15 ESV",
             "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. - Philippians 4:6 ESV",
             "And let us not grow weary of doing good, for in due season we will reap, if we do not give up. - Galatians 6:9 ESV",
             "For by grace you have been saved through faith. And this is not your own doing; it is the gift of God. - Ephesians 2:8 ESV",
@@ -63,7 +63,7 @@ public class VerseOfTheDay {
             "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness. - 1 John 1:9 ESV",
             "And whatever you do, in word or deed, do everything in the name of the Lord Jesus, giving thanks to God the Father through him. - Colossians 3:17 ESV",
             "Blessed are the peacemakers, for they shall be called sons of God. - Matthew 5:9 ESV",
-            "Rejoice in the Lord always; again I will say, rejoice. - Philippians 4:4 ESV",
+            "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come. - 2 Corinthians 5:17 ESV",
             "Let not your hearts be troubled. Believe in God; believe also in me. - John 14:1 ESV",
             "And above all these put on love, which binds everything together in perfect harmony. - Colossians 3:14 ESV",
             "And we have something more sure, the prophetic word, to which you will do well to pay attention as to a lamp shining in a dark place, until the day dawns and the morning star rises in your hearts. - 2 Peter 1:19 ESV",
@@ -94,7 +94,7 @@ public class VerseOfTheDay {
         int verseIndex = random.nextInt(verses.length);
 
         verseImage.setImage(new Image(imagePaths[imageIndex]));
-        verseLabel.setText(verses[verseIndex]);
+        verseLabel.setText(verses[verseIndex].toLowerCase()); // convert to lowercase
     }
 
     @FXML
