@@ -1,4 +1,4 @@
-* {
-    -fx-font-family: Comic Sans;
-    font-family: Comic Sans;
+.root {
+    -fx-font-family: Times New Roman;
+    font-family: Times New Roman;
 }
