@@ -23,10 +23,15 @@ public class ActivityPage {
     public static String userName;
     @FXML
     Label theTime;
-    @FXML
+    @FXML //if left blank will display 'user'
     public void setUserName(String name) {
+        if (!name.isEmpty()){
         ActivityPage.userName = name;
-        nameLabel.setText("hello, " + ActivityPage.userName);
+        nameLabel.setText(ActivityPage.userName);
+        }else{
+            ActivityPage.userName = "user";
+            nameLabel.setText("user");
+        }
         startTime();
     }
     @FXML
