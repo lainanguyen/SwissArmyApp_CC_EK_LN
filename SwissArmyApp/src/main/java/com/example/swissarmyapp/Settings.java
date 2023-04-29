@@ -39,38 +39,7 @@ public class Settings {
         stage.show();
     }
 
-//    @FXML
-//    public void changeColor(ActionEvent event) throws IOException {
-//        redMode = !redMode;
-//        if (redMode) {
-//            setRedMode();
-//        } else {
-//            setWhiteMode();
-//        }
-//    }
-//
-//
-//    private void setRedMode(ActionEvent event) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
-//        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
-//        scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-//        stage.setTitle("Settings");
-//        stage.setScene(scene);
-//        stage.show();
-//    }
-//
-//    private void setWhiteMode(ActionEvent event) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
-//        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//        scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-//        scene.getStylesheets().add(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
-//        stage.setTitle("Settings");
-//        stage.setScene(scene);
-//        stage.show();
-//    }
+
 
     @FXML
     public void changeFont(ActionEvent event) throws IOException {
