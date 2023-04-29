@@ -26,7 +26,7 @@ public class ActivityPage {
     @FXML
     public void setUserName(String name) {
         ActivityPage.userName = name;
-        nameLabel.setText("Hi, " + ActivityPage.userName);
+        nameLabel.setText("hello, " + ActivityPage.userName);
         startTime();
     }
     @FXML
