@@ -18,6 +18,8 @@ public class Settings {
 
     @FXML
     boolean redMode = false;
+    @FXML
+    boolean fontType = false;
 
     @FXML
     public void changeColor(ActionEvent event) throws IOException {
@@ -70,7 +72,23 @@ public class Settings {
 //        stage.show();
 //    }
 
-
+    @FXML
+    public void changeFont(ActionEvent event) throws IOException {
+        fontType = !fontType;
+        FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        if (fontType) {
+            scene.getStylesheets().remove(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
+            scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
+        } else {
+            scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
+            scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
+        }
+        stage.setTitle("Settings");
+        stage.setScene(scene);
+        stage.show();
+    }
 
     @FXML
     public void backToActivities (ActionEvent event) throws IOException {
@@ -78,12 +96,21 @@ public class Settings {
         FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("activitypage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
         if (redMode) {
             scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
         } else {
             scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
+        }
+
+        if (fontType) {
+            scene.getStylesheets().remove(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
+            scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
+        } else {
+            scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
+            scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
         }
         stage.setTitle("ActivityPage");
         stage.setScene(scene);
