@@ -5,13 +5,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.VerseOfTheDay">
+<AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.VerseOfTheDay">
    <children>
-      <Button fx:id="backToActivities" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToActivities" text="back" />
-      <ImageView fx:id="verseImage" fitHeight="172.0" fitWidth="248.0" layoutX="176.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="verseLabel" layoutX="128.0" layoutY="236.0" prefHeight="81.0" prefWidth="344.0" textAlignment="CENTER" wrapText="true">
+      <Button fx:id="backToActivities" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToActivities" prefHeight="48.0" prefWidth="100.0" text="back" >
          <font>
-            <Font size="12.0" />
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="verseImage" fitHeight="391.0" fitWidth="606.0" layoutX="300.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="verseLabel" layoutX="300.0" layoutY="551.0" prefHeight="160.0" prefWidth="606.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
          </font></Label>
    </children>
 </AnchorPane>
