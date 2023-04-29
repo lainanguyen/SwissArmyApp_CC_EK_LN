@@ -22,7 +22,7 @@ public class Settings {
     @FXML
     private TextField changeName;
 
-    //Changes the users name 
+    //Changes the users name
     @FXML
     public void changeNameButton() {
         String name = changeName.getText();
