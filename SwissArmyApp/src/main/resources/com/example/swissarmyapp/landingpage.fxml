@@ -6,20 +6,27 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="790.0" prefWidth="1206.0" style="-fx-background-color: #C10913BF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.LandingPage">
+<AnchorPane prefHeight="790.0" prefWidth="1206.0" style="-fx-border-radius: 50px; -fx-background-color: #C10913BF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.LandingPage">
    <children>
-      <TextField fx:id="nameInput" layoutX="409.0" layoutY="471.0" prefHeight="46.0" prefWidth="258.0" promptText="enter your name" />
-      <Button fx:id="nextB" layoutX="676.0" layoutY="471.0" mnemonicParsing="false" onAction="#theNextButtonClick" prefHeight="46.0" prefWidth="121.0" text="next" />
-      <Circle fill="WHITE" layoutX="604.0" layoutY="296.0" radius="93.0" stroke="WHITE" strokeType="INSIDE" />
-      <ImageView fitHeight="91.0" fitWidth="111.0" layoutX="548.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+      <TextField fx:id="nameInput" layoutX="434.0" layoutY="497.0" prefHeight="46.0" prefWidth="258.0" promptText="enter your name" />
+      <Button fx:id="nextB" layoutX="703.0" layoutY="497.0" mnemonicParsing="false" onAction="#theNextButtonClick" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="next" textFill="WHITE">
+         <font>
+            <Font name="Roboto Light" size="13.0" />
+         </font></Button>
+      <Circle fill="WHITE" layoutX="625.0" layoutY="296.0" radius="148.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fitHeight="161.0" fitWidth="190.0" layoutX="530.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../highindlogo.PNG" />
          </image>
       </ImageView>
-      <Label layoutX="465.0" layoutY="400.0" prefHeight="53.0" prefWidth="276.0" text="Swiss Army App" textAlignment="CENTER" textOverrun="CLIP">
+      <Label layoutX="487.0" layoutY="444.0" prefHeight="53.0" prefWidth="276.0" text="please enter your name to get started" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
          <font>
-            <Font name="Roboto Light" size="38.0" />
+            <Font name="Roboto Light" size="16.0" />
          </font>
       </Label>
+      <Label layoutX="486.0" layoutY="696.0" prefHeight="31.0" prefWidth="276.0" text="brought to you by Highlander Industries" textFill="#7c0f16">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
    </children>
 </AnchorPane>
