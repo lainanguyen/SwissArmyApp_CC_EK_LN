@@ -5,36 +5,22 @@
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.Settings">
-   <children>
-       <Button mnemonicParsing="false" onAction="#backToActivities" prefHeight="48.0" prefWidth="100.0" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0"><font>
-           <Font size="17.0" />
-       </font></Button>
-      <Label layoutX="111.0" layoutY="142.0" prefHeight="48.0" prefWidth="162.0" text="change name:" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="142.0">
-         <font>
-            <Font size="26.0" />
-         </font></Label>
-      <Label layoutX="111.0" layoutY="227.0" text="color mode:" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="227.0">
-         <font>
-            <Font size="26.0" />
-         </font></Label>
-      <Label layoutX="111.0" layoutY="302.0" prefHeight="31.0" prefWidth="188.0" text="setting3:" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="302.0">
-         <font>
-            <Font size="26.0" />
-         </font></Label>
-      <Label layoutX="111.0" layoutY="368.0" prefHeight="48.0" prefWidth="197.0" text="setting4:" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="368.0">
-         <font>
-            <Font size="26.0" />
-         </font></Label>
-      <Label layoutX="111.0" layoutY="443.0" prefHeight="48.0" prefWidth="188.0" text="setting5:" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="443.0">
-         <font>
-            <Font size="26.0" />
-         </font></Label>
-      <TextField fx:id="changeName" layoutX="324.0" layoutY="142.0" prefHeight="48.0" prefWidth="402.0" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="142.0" />
-     <ToggleButton fx:id="colorToggle" layoutX="324.0" layoutY="218.0" mnemonicParsing="false" onAction="#changeColor" prefHeight="48.0" prefWidth="273.0" text="red" AnchorPane.leftAnchor="324.0" AnchorPane.topAnchor="218.0" />
-      <ToggleButton layoutX="324.0" layoutY="293.0" mnemonicParsing="false" onAction="#changeFont" prefHeight="48.0" prefWidth="273.0" text="font" />
-      <ToggleButton layoutX="324.0" layoutY="369.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="273.0" text="ToggleButton" />
-      <ToggleButton layoutX="324.0" layoutY="443.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="273.0" text="ToggleButton" />
-      <Label fx:id="showName" layoutX="270.0" layoutY="72.0" prefHeight="55.0" prefWidth="666.0" text="" />
-      <Button layoutX="739.0" layoutY="142.0" mnemonicParsing="false" onAction="#changeNameButton" prefHeight="48.0" prefWidth="197.0" text="save" />
-   </children>
+    <children>
+        <Button focusTraversable="false" mnemonicParsing="false" onAction="#backToActivities" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0" />
+        <Label focusTraversable="false" text="settings" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="50.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Label text="change name" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="150.0" />
+        <Label text="change app color" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="175.0" />
+        <Label text="Label" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="200.0" />
+        <Label text="Label" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="225.0" />
+        <Label text="Label" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="250.0" />
+        <TextField focusTraversable="false" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="140.0" />
+        <ToggleButton fx:id="colorToggle" focusTraversable="false" layoutX="221.0" layoutY="238.0" mnemonicParsing="false" text="Color" />
+        <ToggleButton fx:id="fontToggle" focusTraversable="false" layoutX="221.0" layoutY="276.0" mnemonicParsing="false" text="Font" />
+        <CheckBox fx:id="colorBox" focusTraversable="false" layoutX="339.0" layoutY="175.0" mnemonicParsing="false" onAction="#changeColor" text="change app color" />
+        <CheckBox fx:id="fontBox" focusTraversable="false" layoutX="339.0" layoutY="208.0" mnemonicParsing="false" onAction="#changeFont" text="change font" />
+    </children>
 </AnchorPane>
