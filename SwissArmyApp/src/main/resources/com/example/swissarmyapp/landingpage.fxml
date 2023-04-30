@@ -19,12 +19,12 @@
             <Image url="@../../../highindlogo.PNG" />
          </image>
       </ImageView>
-      <Label layoutX="444.0" layoutY="444.0" prefHeight="53.0" prefWidth="433.0" text="welcome! please enter your name to get started..." textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+      <Label layoutX="428.0" layoutY="444.0" prefHeight="53.0" prefWidth="468.0" text="welcome! please enter your name to get started..." textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
          <font>
             <Font name="Roboto Light" size="19.0" />
          </font>
       </Label>
-      <Label fx:id="btybHI" layoutX="497.0" layoutY="717.0" prefHeight="31.0" prefWidth="364.0" text="--brought to you by Highlander Industries--" textFill="#7c0f16">
+      <Label fx:id="btybHI" layoutX="480.0" layoutY="719.0" prefHeight="31.0" prefWidth="364.0" text="--brought to you by Highlander Industries--" textFill="#7c0f16">
          <font>
             <Font size="16.0" />
          </font></Label>
