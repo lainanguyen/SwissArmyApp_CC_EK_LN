@@ -24,6 +24,7 @@ public class LandingPage {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         ActivityPage controller = fxmlLoader.getController();
         controller.setUserName(ActivityPage.userName);
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setTitle("Activities");
         stage.setScene(scene);

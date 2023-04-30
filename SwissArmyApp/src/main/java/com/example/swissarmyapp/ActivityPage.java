@@ -51,6 +51,8 @@ public class ActivityPage {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790); //size of the window
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Love Calculator");
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+
         stage.setScene(scene);
         stage.show();
     }
@@ -60,6 +62,8 @@ public class ActivityPage {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790); //size of the window
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Tip Calculator");
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+
         stage.setScene(scene);
         stage.show();
     }
@@ -70,6 +74,8 @@ public class ActivityPage {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790); //size of the window
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Mad Libs");
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+
         stage.setScene(scene);
         stage.show();
     }
@@ -79,6 +85,8 @@ public class ActivityPage {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790); //size of the window
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Verse of the Day");
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+
         stage.setScene(scene);
         stage.show();
     }
@@ -89,6 +97,8 @@ public class ActivityPage {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790); //size of the window
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Settings");
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+
         stage.setScene(scene);
         stage.show();
 

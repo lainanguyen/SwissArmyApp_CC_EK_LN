@@ -115,6 +115,8 @@ public class Settings implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("activitypage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+
         ActivityPage activityPage = fxmlLoader.getController();
         activityPage.onBack();
 

@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class LoveCalculator {
+
     @FXML
     private TextField nameInput;
 
@@ -27,6 +28,7 @@ public class LoveCalculator {
 
     @FXML
     public void initialize() {
+
         // Initialize event listener for the calculate button
         pushButton.setOnAction(event -> {
             String name1 = nameInput.getText();
@@ -66,6 +68,8 @@ public class LoveCalculator {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("ActivityPage");
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+
         stage.setScene(scene);
         stage.show();
         ActivityPage activityPage = fxmlLoader.getController();

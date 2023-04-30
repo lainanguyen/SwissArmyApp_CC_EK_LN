@@ -91,6 +91,7 @@ public class Madlibs {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("ActivityPage");
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
         ActivityPage activityPage = fxmlLoader.getController();

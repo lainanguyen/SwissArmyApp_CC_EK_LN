@@ -9,7 +9,7 @@
 <AnchorPane prefHeight="790.0" prefWidth="1206.0" style="-fx-border-radius: 50px; -fx-background-color: #C10913BF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.LandingPage">
    <children>
       <TextField fx:id="nameInput" layoutX="434.0" layoutY="497.0" prefHeight="46.0" prefWidth="258.0" promptText="enter your name" />
-      <Button fx:id="nextB" layoutX="703.0" layoutY="497.0" mnemonicParsing="false" onAction="#theNextButtonClick" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: transparent; -fx-border-color: white;" text="next" textFill="WHITE">
+      <Button fx:id="nextB" layoutX="703.0" layoutY="497.0" mnemonicParsing="false" onAction="#theNextButtonClick" prefHeight="46.0" prefWidth="121.0" text="next" textFill="WHITE">
          <font>
             <Font name="Roboto Light" size="13.0" />
          </font></Button>

@@ -15,6 +15,8 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         //scene.getStylesheets().add(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
         stage.setTitle("Swiss Army App");
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+
         stage.setScene(scene);
         stage.show();
     }
