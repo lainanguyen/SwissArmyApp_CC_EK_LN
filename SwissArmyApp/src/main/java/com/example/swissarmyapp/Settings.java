@@ -24,7 +24,7 @@ public class Settings implements Initializable {
     @FXML
     private TextField changeName;
 
-    //Changes the users name
+    //SETTING TO CHANGE NAME
     @FXML
     public void changeNameButton() {
         String name = changeName.getText();

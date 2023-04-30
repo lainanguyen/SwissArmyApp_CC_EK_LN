@@ -33,7 +33,7 @@ public class TipCalc {
         stage.setScene(scene);
         stage.show();
         ActivityPage activityPage = fxmlLoader.getController();
-        activityPage.onBack();
+        activityPage.onBack();//to make sure the changes stay when you go back
     }
 
 
