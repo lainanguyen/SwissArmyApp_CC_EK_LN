@@ -1,5 +1,9 @@
 .root{
   -fx-background-color:#C10913BF;
+  -fx-font-family: 'Delicious Handrawn';
+  -fx-font-weight: normal;
+  -fx-font-style: normal;
+
 
 }
 .button{
