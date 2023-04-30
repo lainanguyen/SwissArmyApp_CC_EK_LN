@@ -23,7 +23,7 @@
             <Font size="40.0" />
          </font></Label>
         <Button layoutX="529.0" layoutY="564.0" mnemonicParsing="false" onAction="#setButtonClick" prefHeight="50.0" prefWidth="200.0" text="settings" />
-      <Label layoutX="529.0" layoutY="165.0" text="hello," textFill="WHITE">
+      <Label layoutX="513.0" layoutY="165.0" text="hello," textFill="WHITE">
          <font>
             <Font size="40.0" />
          </font>

@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 .root{
   -fx-background-color:#C10913BF;
-  -fx-font-family: 'Delicious Handrawn';
   -fx-font-weight: normal;
   -fx-font-style: normal;
 
 
+
+
+
 }
+  Label {
+      -fx-text-fill: white;
+      -fx-font-family:"Raleway";
+
+  }
 .button{
+    -fx-font-family:"Raleway";
+    -fx-font-size:20px;
     -fx-background-color:transparent;
     -fx-background-radius: 15px;
     -fx-text-fill: white;
@@ -17,6 +27,8 @@
 
 }
 .button:hover{
+      -fx-font-family:"Raleway";
+          -fx-font-size:20px;
     -fx-background-radius: 15px;
     -fx-text-fill: #C10913BF;
      -fx-background-color:white;
