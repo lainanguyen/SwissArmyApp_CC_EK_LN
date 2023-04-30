@@ -33,7 +33,7 @@
          <font>
             <Font size="20.0" />
          </font></CheckBox>
-        <CheckBox fx:id="fontBox" focusTraversable="false" layoutX="477.0" layoutY="349.0" mnemonicParsing="false" onAction="#changeFont" prefHeight="46.0" prefWidth="197.0" text="change font">
+        <CheckBox fx:id="fontBox" focusTraversable="false" layoutX="477.0" layoutY="349.0" mnemonicParsing="false" onAction="#fontBoxFlipped" prefHeight="46.0" prefWidth="197.0" text="change font">
          <font>
             <Font size="20.0" />
          </font></CheckBox>

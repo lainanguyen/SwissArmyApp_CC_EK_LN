@@ -37,78 +37,59 @@ public class Settings implements Initializable {
     @FXML
     CheckBox fontBox;
 
-    String backgroundColor = HelloApplication.class.getResource("/whitemode.css").toExternalForm();
-    String font = HelloApplication.class.getResource("/systemfont.css").toExternalForm();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         colorBox.setSelected(SettingsSingleton.getColorChecked());
+        fontBox.setSelected(SettingsSingleton.getFontChecked());
     }
 
-    public void colorBoxFlipped() {
+    public void colorBoxFlipped(ActionEvent event) throws IOException {
         //reverse the boolean variable
         SettingsSingleton.setColorChecked(!SettingsSingleton.getColorChecked());
-
-    }
-
-    @FXML
-    public void changeColor(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        if (colorBox.isSelected()) {
+        if (SettingsSingleton.getColorChecked()) {
             //scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
-            backgroundColor = HelloApplication.class.getResource("/redmode.css").toExternalForm();
+            SettingsSingleton.setBackgroundColor(HelloApplication.class.getResource("/redmode.css").toExternalForm());
 
             //scene.getStylesheets().addAll(backgroundColor, font);
         } else {
             // scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-            backgroundColor = HelloApplication.class.getResource("/whitemode.css").toExternalForm();
+            SettingsSingleton.setBackgroundColor(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
             // scene.getStylesheets().addAll(backgroundColor, font);
         }
-        if (fontBox.isSelected()) {
-            scene.getStylesheets().remove(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
-            //scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
-            font = HelloApplication.class.getResource("/raleway.css").toExternalForm();
 
-//            scene.getStylesheets().addAll(backgroundColor, font);
-
-        } else {
-            scene.getStylesheets().remove(HelloApplication.class.getResource("/raleway.css").toExternalForm());
-            //scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
-            font = HelloApplication.class.getResource("/systemfont.css").toExternalForm();
-//            scene.getStylesheets().addAll(backgroundColor, font);
-        }
-        scene.getStylesheets().addAll(backgroundColor, font);
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
         stage.setTitle("Settings");
         stage.setScene(scene);
         stage.show();
     }
-
-
-
-    @FXML
-    public void changeFont(ActionEvent event) throws IOException {
+    public void fontBoxFlipped(ActionEvent event) throws IOException {
+        SettingsSingleton.setFontChecked(!SettingsSingleton.getFontChecked());
         FXMLLoader fxmlLoader = new FXMLLoader(Madlibs.class.getResource("setting1.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        if (fontBox.isSelected()) {
+        if (SettingsSingleton.getFontChecked()) {
             scene.getStylesheets().remove(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
             //scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
-            font = HelloApplication.class.getResource("/raleway.css").toExternalForm();
+            SettingsSingleton.setFont(HelloApplication.class.getResource("/raleway.css").toExternalForm());
 
-            scene.getStylesheets().addAll(backgroundColor, font);
+            scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
 
         } else {
             scene.getStylesheets().remove(HelloApplication.class.getResource("/raleway.css").toExternalForm());
             //scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
-            font = HelloApplication.class.getResource("/systemfont.css").toExternalForm();
-            scene.getStylesheets().addAll(backgroundColor, font);
+            SettingsSingleton.setFont(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
+            scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
         }
         stage.setTitle("Settings");
         stage.setScene(scene);
         stage.show();
     }
+
+
 
     @FXML
     public void backToActivities (ActionEvent event) throws IOException {
@@ -117,47 +98,41 @@ public class Settings implements Initializable {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         ActivityPage activityPage = fxmlLoader.getController();
         activityPage.onBack();
-
-        if (colorBox.isSelected()) {
-            scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
-            scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-        } else {
-            scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-            scene.getStylesheets().add(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
-        }
-        if (fontBox.isSelected()) {
-            scene.getStylesheets().remove(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
-            scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
-        } else {
-            scene.getStylesheets().remove(HelloApplication.class.getResource("/raleway.css").toExternalForm());
-            scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
-        }
+        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
         //settingsChecker(scene);
         stage.setTitle("ActivityPage");
-        scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+        //
         stage.setScene(scene);
         stage.show();
     }
 
 
 
-//    public void settingsChecker(Scene scene) {
-//        if (redMode) {
-//            scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
-//            scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-//        } else {
-//            scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-//            scene.getStylesheets().add(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
-//        }
-//        if (fontType) {
-//            scene.getStylesheets().remove(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
-//            scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
-//        } else {
-//            scene.getStylesheets().remove(HelloApplication.class.getResource("/raleway.css").toExternalForm());
-//            scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
-//        }
-//
-//    }
+    public void settingsChecker(Scene scene) {
+        if (SettingsSingleton.getColorChecked()) {
+            //scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
+            SettingsSingleton.setBackgroundColor(HelloApplication.class.getResource("/redmode.css").toExternalForm());
+
+            //scene.getStylesheets().addAll(backgroundColor, font);
+        } else {
+            // scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
+            SettingsSingleton.setBackgroundColor(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
+            // scene.getStylesheets().addAll(backgroundColor, font);
+        }
+        if (SettingsSingleton.getFontChecked()) {
+            scene.getStylesheets().remove(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
+            //scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
+            SettingsSingleton.setFont(HelloApplication.class.getResource("/raleway.css").toExternalForm());
+
+        } else {
+            scene.getStylesheets().remove(HelloApplication.class.getResource("/raleway.css").toExternalForm());
+            //scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
+            SettingsSingleton.setFont(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
+
+        }
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
+    }
 
 
 //    @FXML
