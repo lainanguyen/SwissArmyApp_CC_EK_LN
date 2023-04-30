@@ -6,32 +6,41 @@
 
 <AnchorPane prefHeight="790.0" prefWidth="1206.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.Madlibs">
    <children>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="226.0" layoutY="14.0" text="welcome to mad libs!" AnchorPane.leftAnchor="226.0" AnchorPane.topAnchor="14.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="513.0" layoutY="82.0" prefHeight="66.0" prefWidth="235.0" text="welcome to mad libs!" AnchorPane.leftAnchor="513.0" AnchorPane.topAnchor="82.0">
          <font>
-            <Font size="18.0" />
+            <Font size="19.0" />
          </font></Label>
-      <Label alignment="CENTER" contentDisplay="CENTER" text="fill in the blanks and press &quot;generate&quot; when finished." AnchorPane.leftAnchor="165.0" AnchorPane.topAnchor="47.0" />
-      <Label layoutX="113.0" layoutY="82.0" text="the road not taken" AnchorPane.leftAnchor="113.0" AnchorPane.topAnchor="82.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="398.0" layoutY="140.0" prefHeight="48.0" prefWidth="497.0" text="fill in the blanks and press &quot;generate&quot; when finished." AnchorPane.leftAnchor="398.0" AnchorPane.topAnchor="140.0">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="364.0" layoutY="188.0" prefHeight="48.0" prefWidth="163.0" text="the road not taken" AnchorPane.leftAnchor="364.0" AnchorPane.topAnchor="188.0">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
       <Label layoutX="420.0" layoutY="82.0" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="82.0" />
-      <Button fx:id="Story1" layoutX="108.0" layoutY="285.0" mnemonicParsing="false" onAction="#generateStory1" prefHeight="26.0" prefWidth="66.0" text="generate" AnchorPane.leftAnchor="108.0" AnchorPane.topAnchor="285.0" />
+      <Button fx:id="Story1" layoutX="338.0" layoutY="544.0" mnemonicParsing="false" onAction="#generateStory1" prefHeight="48.0" prefWidth="119.0" text="generate" AnchorPane.leftAnchor="338.0" AnchorPane.topAnchor="544.0" />
       <Label fx:id="story1" layoutX="108.0" layoutY="317.0" AnchorPane.leftAnchor="108.0" AnchorPane.topAnchor="317.0" />
-      <Button fx:id="Story2" layoutX="379.0" layoutY="285.0" mnemonicParsing="false" onAction="#generateStory2" text="generate" AnchorPane.leftAnchor="379.0" AnchorPane.topAnchor="285.0" />
+      <Button fx:id="Story2" layoutX="674.0" layoutY="544.0" mnemonicParsing="false" onAction="#generateStory2" prefHeight="48.0" prefWidth="119.0" text="generate" AnchorPane.leftAnchor="674.0" AnchorPane.topAnchor="544.0" />
       <Label fx:id="story2" layoutX="381.0" layoutY="317.0" AnchorPane.leftAnchor="381.0" />
-      <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToActivities" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0" prefHeight="48.0" prefWidth="100.0"><font>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToActivities" prefHeight="48.0" prefWidth="100.0" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0"><font>
          <Font size="17.0" />
       </font></Button>
-      <TextField fx:id="story1Noun" layoutX="108.0" layoutY="109.0" prefHeight="9.0" prefWidth="112.0" promptText="noun" />
-      <TextField fx:id="story1MU" layoutX="108.0" layoutY="145.0" prefHeight="26.0" prefWidth="112.0" promptText="measuring unit" />
-      <TextField fx:id="story1Place" layoutX="108.0" layoutY="181.0" prefHeight="26.0" prefWidth="112.0" promptText="place" />
-      <TextField fx:id="story1PTV" layoutX="108.0" layoutY="216.0" prefHeight="26.0" prefWidth="112.0" promptText="past tense verb" />
-      <TextField fx:id="story1Adverb" layoutX="108.0" layoutY="251.0" prefHeight="26.0" prefWidth="112.0" promptText="adverb" />
-      <TextField fx:id="story2Noun" layoutX="379.0" layoutY="109.0" prefHeight="26.0" prefWidth="112.0" promptText="noun" />
-      <TextField fx:id="story2Noun2" layoutX="379.0" layoutY="145.0" prefHeight="26.0" prefWidth="112.0" promptText="noun" />
-      <TextField fx:id="story2Number" layoutX="379.0" layoutY="181.0" prefHeight="26.0" prefWidth="112.0" promptText="number" />
-      <TextField fx:id="story2Adjective" layoutX="379.0" layoutY="216.0" prefHeight="26.0" prefWidth="112.0" promptText="adjective" />
-      <TextField fx:id="story2Noun3" layoutX="379.0" layoutY="251.0" prefHeight="26.0" prefWidth="112.0" promptText="noun" />
-      <Label layoutX="396.0" layoutY="82.0" text="tony's burritos" />
-      <Button fx:id="story1Reset" layoutX="179.0" layoutY="285.0" mnemonicParsing="false" onAction="#resetStory1" prefHeight="26.0" prefWidth="31.0" text="↻" />
-      <Button fx:id="story2Reset" layoutX="450.0" layoutY="285.0" mnemonicParsing="false" onAction="#resetStory2" prefHeight="26.0" prefWidth="31.0" text="↻" />
+      <TextField fx:id="story1Noun" layoutX="338.0" layoutY="248.0" prefHeight="48.0" prefWidth="196.0" promptText="noun" />
+      <TextField fx:id="story1MU" layoutX="338.0" layoutY="310.0" prefHeight="48.0" prefWidth="196.0" promptText="measuring unit" />
+      <TextField fx:id="story1Place" layoutX="338.0" layoutY="371.0" prefHeight="48.0" prefWidth="196.0" promptText="place" />
+      <TextField fx:id="story1PTV" layoutX="338.0" layoutY="427.0" prefHeight="48.0" prefWidth="196.0" promptText="past tense verb" />
+      <TextField fx:id="story1Adverb" layoutX="338.0" layoutY="486.0" prefHeight="48.0" prefWidth="196.0" promptText="adverb" />
+      <TextField fx:id="story2Noun" layoutX="674.0" layoutY="248.0" prefHeight="48.0" prefWidth="196.0" promptText="noun" />
+      <TextField fx:id="story2Noun2" layoutX="674.0" layoutY="310.0" prefHeight="48.0" prefWidth="196.0" promptText="noun" />
+      <TextField fx:id="story2Number" layoutX="674.0" layoutY="371.0" prefHeight="48.0" prefWidth="196.0" promptText="number" />
+      <TextField fx:id="story2Adjective" layoutX="674.0" layoutY="427.0" prefHeight="48.0" prefWidth="196.0" promptText="adjective" />
+      <TextField fx:id="story2Noun3" layoutX="674.0" layoutY="486.0" prefHeight="48.0" prefWidth="196.0" promptText="noun" />
+      <Label layoutX="713.0" layoutY="200.0" prefHeight="48.0" prefWidth="149.0" text="tony's burritos">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Button fx:id="story1Reset" layoutX="466.0" layoutY="544.0" mnemonicParsing="false" onAction="#resetStory1" prefHeight="48.0" prefWidth="68.0" text="↻" />
+      <Button fx:id="story2Reset" layoutX="802.0" layoutY="544.0" mnemonicParsing="false" onAction="#resetStory2" prefHeight="48.0" prefWidth="68.0" text="↻" />
    </children>
 </AnchorPane>
