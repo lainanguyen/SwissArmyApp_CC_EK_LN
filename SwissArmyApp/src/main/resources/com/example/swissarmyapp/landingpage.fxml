@@ -3,18 +3,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="790.0" prefWidth="1206.0" style="-fx-border-radius: 50px; -fx-background-color: #C10913BF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.LandingPage">
+<AnchorPane prefHeight="790.0" prefWidth="1206.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.swissarmyapp.LandingPage">
    <children>
       <TextField fx:id="nameInput" layoutX="444.0" layoutY="505.0" prefHeight="46.0" prefWidth="267.0" promptText="enter your name" />
       <Button fx:id="nextB" layoutX="720.0" layoutY="505.0" mnemonicParsing="false" onAction="#theNextButtonClick" prefHeight="46.0" prefWidth="121.0" text="next" textFill="WHITE">
          <font>
             <Font name="Roboto Light" size="13.0" />
          </font></Button>
-      <Circle fill="WHITE" layoutX="633.0" layoutY="296.0" radius="148.0" stroke="WHITE" strokeType="INSIDE" />
-      <ImageView fitHeight="161.0" fitWidth="190.0" layoutX="538.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="202.0" fitWidth="276.0" layoutX="507.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../highindlogo.PNG" />
          </image>
