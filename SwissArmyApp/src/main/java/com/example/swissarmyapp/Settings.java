@@ -10,13 +10,27 @@ import javafx.scene.control.CheckBox;
 import javafx.scene.control.ToggleButton;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
-import java.io.File;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Settings implements Initializable {
+    //change name
+    @FXML
+    private Label showName;
+
+    @FXML
+    private TextField changeName;
+
+    //Changes the users name
+    @FXML
+    public void changeNameButton() {
+        String name = changeName.getText();
+        ActivityPage.userName = name;
+        showName.setText("your name is set as: " + name);
+    }
     @FXML
     CheckBox colorBox;
 
@@ -101,6 +115,9 @@ public class Settings implements Initializable {
         FXMLLoader fxmlLoader = new FXMLLoader(LandingPage.class.getResource("activitypage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        ActivityPage activityPage = fxmlLoader.getController();
+        activityPage.onBack();
+
         if (colorBox.isSelected()) {
             scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/redmode.css").toExternalForm());
