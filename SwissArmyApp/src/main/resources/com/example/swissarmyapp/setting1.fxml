@@ -20,7 +20,7 @@
         <TextField focusTraversable="false" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="140.0" />
         <ToggleButton fx:id="colorToggle" focusTraversable="false" layoutX="221.0" layoutY="238.0" mnemonicParsing="false" text="Color" />
         <ToggleButton fx:id="fontToggle" focusTraversable="false" layoutX="221.0" layoutY="276.0" mnemonicParsing="false" text="Font" />
-        <CheckBox fx:id="colorBox" focusTraversable="false" layoutX="339.0" layoutY="175.0" mnemonicParsing="false" onAction="#changeColor" text="change app color" />
+        <CheckBox fx:id="colorBox" focusTraversable="false" layoutX="339.0" layoutY="175.0" mnemonicParsing="false" onAction="#colorBoxFlipped" text="change app color" />
         <CheckBox fx:id="fontBox" focusTraversable="false" layoutX="339.0" layoutY="208.0" mnemonicParsing="false" onAction="#changeFont" text="change font" />
     </children>
 </AnchorPane>

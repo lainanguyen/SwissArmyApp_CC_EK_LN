@@ -3,6 +3,7 @@ package com.example.swissarmyapp;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
@@ -12,8 +13,10 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
-public class Settings {
+public class Settings implements Initializable {
     @FXML
     CheckBox colorBox;
 
@@ -23,6 +26,16 @@ public class Settings {
     String backgroundColor = HelloApplication.class.getResource("/whitemode.css").toExternalForm();
     String font = HelloApplication.class.getResource("/systemfont.css").toExternalForm();
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        colorBox.setSelected(SettingsSingleton.getColorChecked());
+    }
+
+    public void colorBoxFlipped() {
+        //reverse the boolean variable
+        SettingsSingleton.setColorChecked(!SettingsSingleton.getColorChecked());
+
+    }
 
     @FXML
     public void changeColor(ActionEvent event) throws IOException {
@@ -107,6 +120,7 @@ public class Settings {
         stage.setScene(scene);
         stage.show();
     }
+
 
 
 //    public void settingsChecker(Scene scene) {
