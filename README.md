@@ -16,7 +16,7 @@ Installing IDEs such as Gluon VM and Mobile Project may be helpful.<br />
 The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=37-110" target="_blank">User Stories</a> were created based on the client's requirements.
 
 ### UML Diagrams
-The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/C<img width="737" alt="UML DIAGRAM" src="https://user-images.githubusercontent.com/125468464/235384188-fcdd0143-5857-428a-ac8b-07cbd02c0c5c.png">
+The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/C>UML Diagrams</a><img width="737" alt="UML DIAGRAM" src="https://user-images.githubusercontent.com/125468464/235384188-fcdd0143-5857-428a-ac8b-07cbd02c0c5c.png">
 IS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=28-110&t=SDeHwCu5MOkNYESU-0" target="_blank">UML Diagrams</a> were created based on expected uses of classes.
 <img 
 
