@@ -3,10 +3,12 @@ package com.example.swissarmyapp;
 public class SettingsSingleton {
     private static Boolean colorChecked = false;
     private static Boolean fontChecked = false;
+    private static Boolean buttonChecked = false;
 
 
     private static String backgroundColor = HelloApplication.class.getResource("/whitemode.css").toExternalForm();
     private static String font = HelloApplication.class.getResource("/systemfont.css").toExternalForm();
+    private static String button = HelloApplication.class.getResource("/land.css").toExternalForm();
 
 
     public static Boolean getColorChecked() {
@@ -23,6 +25,7 @@ public class SettingsSingleton {
         SettingsSingleton.fontChecked = fontChecked;
     }
 
+
     public static String getBackgroundColor() {
         return backgroundColor;
     }
@@ -35,6 +38,20 @@ public class SettingsSingleton {
     }
     public static void setFont(String font) {
         SettingsSingleton.font = font;
+    }
+
+    public static Boolean getButtonChecked() {
+        return buttonChecked;
+    }
+    public static void setButtonChecked(Boolean buttonChecked) {
+        SettingsSingleton.buttonChecked = buttonChecked;
+    }
+
+    public static String getButton() {
+        return button;
+    }
+    public static void setButton(String button) {
+        SettingsSingleton.button = button;
     }
 
 }

@@ -52,7 +52,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Love Calculator");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
 
         stage.setScene(scene);
         stage.show();
@@ -64,7 +64,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Tip Calculator");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
 
         stage.setScene(scene);
         stage.show();
@@ -77,7 +77,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Mad Libs");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
 
         stage.setScene(scene);
         stage.show();
@@ -89,7 +89,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Verse of the Day");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
 
         stage.setScene(scene);
         stage.show();
@@ -102,7 +102,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Settings");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
 
         stage.setScene(scene);
         stage.show();
