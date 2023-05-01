@@ -6,6 +6,10 @@ Laina Nguyen, Liza Kim, Caroline Conrad
 The Swiss Army App is an application created for Highlander Industries as a means of helping the company's clients pass time while waiting for their appointments. This app is formatted for tablet use. The app's landing page sports the Highlander Industries logo and requests the user's name before proceeding to a page with buttons for selecting different activity options. The activities include a tip calculator, Mad Libs, baseball stats, Bible verses, and a love calculator. There is also a Settings page to change the user's nickname and to change five features across the app. The Swiss Army App strives to provide about 20 minutes of wholesome entertainment to clients to make their wait more enjoyable. 
 
 ### Installation & Usage:
+Currently, the app only runs as a JAR file. Our group did not create an EXE of DMG executable.<br/>
+Find and download the JAR file in our repo. Run with this command:<br/>
+java  —jar file_name.jar <br/>
+!!!!!!!!!!!!!! include JAR file here !!!!!!!!!!!
 
 ### System Requirements:
 As the app is made in JavaFX, it can be run on Windows, iOS, or Android devices. The app is formatted for a Microsoft Surface Pro 4 tablet; this tablet must have JDK 6 Update 13 installed at minimum.<br />
@@ -25,6 +29,12 @@ The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-
 To view more, visit link: <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=0-1&t=q5UQZMyribt1AIKf-0" target="_blank"> UI Mockups</a>
 
 ### Bugs & Upcoming Features
--Customizable Tip (feature)<br/>
--Time is not live (bug)
-
+•Customizable Tip (feature)
+•More Mad Libs stories (feature)
+•Fix the settings conflict (feature)<br/>
+<br/>
+•Time is not live (bug)
+•Settings to change the app color and the button radius conflict with each other (bug)
+<br/>
+<br/>
+###### Version 1.0.0 2023/5/1
