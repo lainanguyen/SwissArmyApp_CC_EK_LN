@@ -9,11 +9,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
+    //launches app with default css, opens to Landing Page
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("landingpage.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1206, 790);
-        //scene.getStylesheets().add(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
         stage.setTitle("Swiss Army App");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
 

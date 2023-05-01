@@ -6,11 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import org.controlsfx.control.ListActionView;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -106,6 +102,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Settings");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+        // tracks settings changes across scenes
         scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
@@ -113,11 +110,9 @@ public class ActivityPage {
 
     }
 
-
     public void onBack() {
         setUserName(userName);
     }
-
 
 }
 
