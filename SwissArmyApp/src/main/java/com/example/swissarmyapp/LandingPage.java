@@ -16,7 +16,6 @@ public class LandingPage {
     public static String userName;
 
 
-
     @FXML
     public void theNextButtonClick(ActionEvent event) throws IOException {
         ActivityPage.userName = nameInput.getText();
