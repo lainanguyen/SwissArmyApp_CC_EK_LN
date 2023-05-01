@@ -3,3 +3,25 @@
     -fx-background-color: #C10913BF;
     background-color: #C10913BF;
 }
+
+#btybHI{
+    -fx-text-fill: white;
+}
+
+
+Label {
+  -fx-text-fill: white;
+}
+
+.button{
+    -fx-background-color: white;
+    -fx-text-fill: #C10913BF;
+     -fx-border-color: #C10913BF;
+}
+
+.button:hover{
+         -fx-border-color: white;
+
+    -fx-text-fill: white;
+     -fx-background-color: #C10913BF;
+}

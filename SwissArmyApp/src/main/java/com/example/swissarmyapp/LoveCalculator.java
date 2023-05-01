@@ -69,6 +69,7 @@ public class LoveCalculator {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("ActivityPage");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont());
 
         stage.setScene(scene);
         stage.show();
