@@ -30,15 +30,4 @@ public class LandingPage {
         stage.setScene(scene);
         stage.show();
     }
-
-
-
-
-
-
-
-
-
-
-
 }

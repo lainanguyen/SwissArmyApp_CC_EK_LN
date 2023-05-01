@@ -31,6 +31,7 @@ public class TipCalc {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("ActivityPage");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
+        // tracks settings changes across scenes
         scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
@@ -40,14 +41,9 @@ public class TipCalc {
     }
 
 
-
    @FXML
     private void toReset(){
        theInput.clear();
        theValue.setText("0.00");
     }
-
-
-
-
 }
