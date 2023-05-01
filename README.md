@@ -36,6 +36,7 @@ To view more, visit link: <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjg
 <br/>
 •Time is not live (bug)
 •Settings to change the app color and the button radius conflict with each other (bug)
+•MadLibs needs user input conditions (bug)
 <br/>
 <br/>
 ###### Version 1.0.0 2023/5/1
