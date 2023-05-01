@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelloController {
+    // controller created with default java, was helpful for testing
     @FXML
     private Label welcomeText;
 
