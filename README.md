@@ -17,7 +17,7 @@ The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-
 <img width="702" alt="Screenshot 2023-04-30 at 9 58 38 PM" src="https://user-images.githubusercontent.com/78044530/235390091-01a209f8-9ef9-4250-ae93-affdc3eefc7a.png">
 
 ### UML Diagrams
-The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/C>IS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=28-110&t=SDeHwCu5MOkNYESU-0" target="_blank">UML Diagrams</a> were created based on expected uses of classes. <img width="737" alt="UML DIAGRAM" src="https://user-images.githubusercontent.com/125468464/235384188-fcdd0143-5857-428a-ac8b-07cbd02c0c5c.png">
+The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/C>IS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=28-110&t=SDeHwCu5MOkNYESU-0" target="_blank">UML Diagrams</a> were created based on expected uses of classes. <img width="853" alt="Screen Shot 2023-05-01 at 2 10 37 AM" src="https://user-images.githubusercontent.com/125468727/235415335-cb5a075b-fd16-4766-bade-367166119309.png">
 
 ### UI Mockups
 The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=0-1&t=q5UQZMyribt1AIKf-0" target="_blank"> UI Mockups</a> were created based on the expected layout of the app.
