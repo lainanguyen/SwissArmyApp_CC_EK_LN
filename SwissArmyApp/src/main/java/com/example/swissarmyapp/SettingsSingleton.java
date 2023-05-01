@@ -1,31 +1,17 @@
 package com.example.swissarmyapp;
 
-import javafx.fxml.FXML;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-
 public class SettingsSingleton {
     private static Boolean colorChecked = false;
     private static Boolean fontChecked = false;
     private static Boolean buttonChecked = false;
-
-
-    private static Boolean iconChecked = false;
+    private static Boolean weightChecked = false;
 
 
     private static String backgroundColor = HelloApplication.class.getResource("/whitemode.css").toExternalForm();
     private static String font = HelloApplication.class.getResource("/systemfont.css").toExternalForm();
     private static String button = HelloApplication.class.getResource("/land.css").toExternalForm();
+    private static String weight = HelloApplication.class.getResource("/radiusdefault.css").toExternalForm();
 
-
-    static String image = "/petcaugh.gif";
-    public static void setImage(ImageView icon) {
-        if (SettingsSingleton.iconChecked) {
-            icon.setImage(new Image(SettingsSingleton.image));
-        } else {
-            icon.setImage(null);
-        }
-    }
 
 
     public static Boolean getColorChecked() {
@@ -72,11 +58,18 @@ public class SettingsSingleton {
     }
 
 
-    public static Boolean getIconChecked() {
-        return iconChecked;
+
+    public static String getWeight() {
+        return weight;
     }
-    public static void setIconChecked(Boolean iconChecked) {
-        SettingsSingleton.iconChecked = iconChecked;
+    public static void setWeight(String weight) {
+        SettingsSingleton.weight = weight;
+    }
+    public static Boolean getWeightChecked() {
+        return weightChecked;
+    }
+    public static void setWeightChecked(Boolean weightChecked) {
+        SettingsSingleton.weightChecked = weightChecked;
     }
 
 

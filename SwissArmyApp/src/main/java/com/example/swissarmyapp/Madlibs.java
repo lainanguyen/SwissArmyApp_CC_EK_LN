@@ -93,7 +93,7 @@ public class Madlibs {
         stage.setTitle("ActivityPage");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
         // checks for the setting changes and carries them over to other scenes
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
         stage.show();

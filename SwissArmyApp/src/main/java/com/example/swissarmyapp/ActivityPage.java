@@ -7,6 +7,8 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.controlsfx.control.ListActionView;
 import java.io.IOException;
@@ -23,6 +25,8 @@ public class ActivityPage {
     public static String userName;
     @FXML
     Label theTime;
+
+
     @FXML //if left blank will display 'user'
     public void setUserName(String name) {
         if (!name.isEmpty()){
@@ -52,7 +56,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Love Calculator");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
         stage.show();
@@ -64,7 +68,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Tip Calculator");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
         stage.show();
@@ -77,7 +81,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Mad Libs");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
         stage.show();
@@ -89,7 +93,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Verse of the Day");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
         stage.show();
@@ -102,7 +106,7 @@ public class ActivityPage {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("Settings");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
         stage.show();

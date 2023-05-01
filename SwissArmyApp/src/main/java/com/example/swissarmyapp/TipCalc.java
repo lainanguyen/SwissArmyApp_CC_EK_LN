@@ -31,7 +31,7 @@ public class TipCalc {
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setTitle("ActivityPage");
         scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+        scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton(),SettingsSingleton.getWeight());
 
         stage.setScene(scene);
         stage.show();
