@@ -22,3 +22,8 @@ The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/C>IS-332%3A-Final
 
 ### UI Mockups
 The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=0-1&t=q5UQZMyribt1AIKf-0" target="_blank"> UI Mockups</a> were created based on the expected layout of the app.
+
+### Bugs & Upcoming Features
+-Customizable Tip (feature)
+-Time is not live (bug)
+
