@@ -14,14 +14,15 @@ Installing IDEs such as Gluon VM and Mobile Project may be helpful.<br />
 
 ### User Stories:
 The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=37-110" target="_blank">User Stories</a> were created based on the client's requirements.
+<img width="702" alt="Screenshot 2023-04-30 at 9 58 38 PM" src="https://user-images.githubusercontent.com/78044530/235390091-01a209f8-9ef9-4250-ae93-affdc3eefc7a.png">
 
 ### UML Diagrams
 The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/C>IS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=28-110&t=SDeHwCu5MOkNYESU-0" target="_blank">UML Diagrams</a> were created based on expected uses of classes. <img width="737" alt="UML DIAGRAM" src="https://user-images.githubusercontent.com/125468464/235384188-fcdd0143-5857-428a-ac8b-07cbd02c0c5c.png">
 
-
-
 ### UI Mockups
 The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=0-1&t=q5UQZMyribt1AIKf-0" target="_blank"> UI Mockups</a> were created based on the expected layout of the app.
+<img width="759" alt="Screenshot 2023-04-30 at 9 39 13 PM" src="https://user-images.githubusercontent.com/78044530/235389739-b9fd9189-dc50-4726-9dfc-90b01c5fcde8.png">
+To view more, visit link: <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=0-1&t=q5UQZMyribt1AIKf-0" target="_blank"> UI Mockups</a>
 
 ### Bugs & Upcoming Features
 -Customizable Tip (feature)<br/>
