@@ -20,8 +20,10 @@ The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/C>IS-332%3A-Final
 
 
 
-### UI Mockups
-The <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=0-1&t=q5UQZMyribt1AIKf-0" target="_blank"> UI Mockups</a> were created based on the expected layout of the app.
+### UI Mockups  
+<img width="759" alt="Screenshot 2023-04-30 at 9 39 13 PM" src="https://user-images.githubusercontent.com/78044530/235388829-c25fb325-f991-410b-951f-e19ea8074fe8.png">
+To see the rest, view <a href="https://www.figma.com/file/wA9F2tL9kpyJ02dGjgbBEI/CIS-332%3A-Final-Proj-%7C-Swiss-Army-App?node-id=0-1&t=q5UQZMyribt1AIKf-0" target="_blank">UI Mockups</a>.
+
 
 ### Bugs & Upcoming Features
 -Customizable Tip (feature)<br/>
