@@ -3,7 +3,7 @@
 Laina Nguyen, Liza Kim, Caroline Conrad
 
 ### Objective Summary:
-The Swiss Army App is an application created for Highlander Industries as a means of helping the company's clients pass time while waiting for their appointments. This app is formatted for tablet use. The app's landing page sports the Highlander Industries logo and requests the user's name before proceeding to a page with buttons for selecting different activity options. The activities include a tip calculator, Mad Libs, baseball stats, Bible verses, and a love calculator. There is also a Settings page to change the user's nickname and to change five features across the app. The Swiss Army App strives to provide about 20 minutes of wholesome entertainment to clients to make their wait more enjoyable. 
+The Swiss Army App is an application created for Highlander Industries as a means of helping the company's clients pass time while waiting for their appointments. This app is formatted for tablet use. The app's landing page sports the Highlander Industries logo and requests the user's name before proceeding to a page with buttons for selecting different activity options. The activities include a tip calculator, Mad Libs, Bible verses, and a love calculator. There is also a Settings page to change the user's nickname and to change five features across the app. The Swiss Army App strives to provide about 20 minutes of wholesome entertainment to clients to make their wait more enjoyable. 
 
 ### Installation & Usage:
 Currently, the app only runs as a JAR file. Our group did not create an EXE of DMG executable.<br/>
