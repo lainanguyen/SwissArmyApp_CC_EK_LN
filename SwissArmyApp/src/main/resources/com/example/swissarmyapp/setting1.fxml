@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -30,6 +31,12 @@
          <font>
             <Font size="20.0" />
          </font></CheckBox>
+      <CheckBox fx:id="iconBox" focusTraversable="false" mnemonicParsing="false" onAction="#iconBoxFlipped" prefHeight="46.0" prefWidth="197.0" text="set icon" AnchorPane.leftAnchor="477.0" AnchorPane.topAnchor="450.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
       <Button layoutX="768.0" layoutY="232.0" mnemonicParsing="false" onAction="#changeNameButton" prefHeight="46.0" prefWidth="88.0" text="save" />
+      <ImageView fx:id="iconSetting" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="520.0" AnchorPane.topAnchor="510.0" />
     </children>
 </AnchorPane>

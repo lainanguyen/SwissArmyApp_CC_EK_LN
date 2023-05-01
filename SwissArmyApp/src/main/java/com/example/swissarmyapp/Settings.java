@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -38,12 +39,19 @@ public class Settings implements Initializable {
     @FXML
     CheckBox buttonBox;
 
+    @FXML
+    CheckBox iconBox;
+
+    @FXML
+    ImageView iconSetting;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         colorBox.setSelected(SettingsSingleton.getColorChecked());
         fontBox.setSelected(SettingsSingleton.getFontChecked());
         buttonBox.setSelected(SettingsSingleton.getButtonChecked());
+        iconBox.setSelected(SettingsSingleton.getIconChecked());
     }
 
     public void colorBoxFlipped(ActionEvent event) throws IOException {
@@ -56,16 +64,18 @@ public class Settings implements Initializable {
             //scene.getStylesheets().remove(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
             SettingsSingleton.setBackgroundColor(HelloApplication.class.getResource("/redmode.css").toExternalForm());
-
+            SettingsSingleton.setImage(iconSetting);
             //scene.getStylesheets().addAll(backgroundColor, font);
         } else {
             // scene.getStylesheets().remove(HelloApplication.class.getResource("/redmode.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
             SettingsSingleton.setBackgroundColor(HelloApplication.class.getResource("/whitemode.css").toExternalForm());
             // scene.getStylesheets().addAll(backgroundColor, font);
+            SettingsSingleton.setImage(iconSetting);
         }
 
         scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+
         stage.setTitle("Settings");
         stage.setScene(scene);
         stage.show();
@@ -80,16 +90,17 @@ public class Settings implements Initializable {
             //scene.getStylesheets().add(HelloApplication.class.getResource("/raleway.css").toExternalForm());
             SettingsSingleton.setFont(HelloApplication.class.getResource("/raleway.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-
+            SettingsSingleton.setImage(iconSetting);
 
         } else {
             scene.getStylesheets().remove(HelloApplication.class.getResource("/raleway.css").toExternalForm());
             //scene.getStylesheets().add(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
             SettingsSingleton.setFont(HelloApplication.class.getResource("/systemfont.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-
+            SettingsSingleton.setImage(iconSetting);
         }
         scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+
         stage.setTitle("Settings");
         stage.setScene(scene);
         stage.show();
@@ -103,17 +114,26 @@ public class Settings implements Initializable {
         if (SettingsSingleton.getButtonChecked()) {
             SettingsSingleton.setButton(HelloApplication.class.getResource("/buttoncolor.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-
+            SettingsSingleton.setImage(iconSetting);
         } else {
             scene.getStylesheets().remove(HelloApplication.class.getResource("/buttoncolor.css").toExternalForm());
             SettingsSingleton.setButton(HelloApplication.class.getResource("/land.css").toExternalForm());
             scene.getStylesheets().add(HelloApplication.class.getResource("/land.css").toExternalForm());
-
+            SettingsSingleton.setImage(iconSetting);
         }
+
         scene.getStylesheets().addAll(SettingsSingleton.getBackgroundColor(), SettingsSingleton.getFont(), SettingsSingleton.getButton());
+
         stage.setTitle("Settings");
         stage.setScene(scene);
         stage.show();
+    }
+
+
+    public void iconBoxFlipped(ActionEvent event) throws IOException {
+        //reverse the boolean variable
+        SettingsSingleton.setIconChecked(!SettingsSingleton.getIconChecked());
+        SettingsSingleton.setImage(iconSetting);
     }
 
 

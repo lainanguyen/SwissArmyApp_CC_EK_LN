@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -28,6 +29,7 @@
             <Font size="40.0" />
          </font>
       </Label>
+      <ImageView fx:id="iconActivity" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="560.0" AnchorPane.topAnchor="65.0" />
     </children>
 
 </AnchorPane>

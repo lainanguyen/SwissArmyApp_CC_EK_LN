@@ -20,9 +20,9 @@
          </font></Label>
       <Label layoutX="420.0" layoutY="82.0" AnchorPane.leftAnchor="420.0" AnchorPane.topAnchor="82.0" />
       <Button fx:id="Story1" layoutX="338.0" layoutY="544.0" mnemonicParsing="false" onAction="#generateStory1" prefHeight="48.0" prefWidth="119.0" text="generate" AnchorPane.leftAnchor="338.0" AnchorPane.topAnchor="544.0" />
-      <Label fx:id="story1" layoutX="108.0" layoutY="317.0" AnchorPane.leftAnchor="108.0" AnchorPane.topAnchor="317.0" />
+      <Label fx:id="story1" layoutX="108.0" layoutY="317.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="650.0" />
       <Button fx:id="Story2" layoutX="674.0" layoutY="544.0" mnemonicParsing="false" onAction="#generateStory2" prefHeight="48.0" prefWidth="119.0" text="generate" AnchorPane.leftAnchor="674.0" AnchorPane.topAnchor="544.0" />
-      <Label fx:id="story2" layoutX="381.0" layoutY="317.0" AnchorPane.leftAnchor="381.0" />
+      <Label fx:id="story2" layoutX="381.0" layoutY="317.0" AnchorPane.leftAnchor="670.0" AnchorPane.topAnchor="650.0" />
       <Button fx:id="backButton" mnemonicParsing="false" onAction="#backToActivities" prefHeight="48.0" prefWidth="100.0" text="back" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0"><font>
          <Font size="17.0" />
       </font></Button>
