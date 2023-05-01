@@ -7,9 +7,10 @@ The Swiss Army App is an application created for Highlander Industries as a mean
 
 ### Installation & Usage:
 Currently, the app only runs as a JAR file. Our group did not create an EXE of DMG executable.<br/>
-Find and download the JAR file in our repo. Run with this command:<br/>
+Find and download the JAR file in our repo: <a href=https://github.com/ElizavKim/SwissArmyApp_CC_EK_LN/tree/main/SwissArmyApp/out/artifacts/SwissArmyApp_jar2 target="_blank">SwissArmyApp_jar2.jar</a><br/>
+Run with this command:<br/>
 java  —jar file_name.jar <br/>
-!!!!!!!!!!!!!! include JAR file here !!!!!!!!!!!
+
 
 ### System Requirements:
 As the app is made in JavaFX, it can be run on Windows, iOS, or Android devices. The app is formatted for a Microsoft Surface Pro 4 tablet; this tablet must have JDK 6 Update 13 installed at minimum.<br />
